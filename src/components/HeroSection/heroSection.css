@@ -1,0 +1,64 @@
+.hero-container {
+    height: 80dvh;
+    width: 100vw;
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    margin: auto;
+    width: 30rem;
+}
+
+.search-box {
+    display: flex;
+    width: 30rem;
+    margin-bottom: 3rem;
+}
+
+.search-box>input {
+    height:4rem;
+    width: 25em;
+    border: 1px solid #3D9AE2;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.search-box>button {
+    width: 5rem;
+    background-color: #3D9AE2;
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.search-box>button>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: normal;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.gs-btn {
+    margin: 0 auto;
+}
+
+.get-started-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1rem;
+    margin: 4rem auto;
+    border-radius:  0.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
