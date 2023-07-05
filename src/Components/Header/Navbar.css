@@ -21,8 +21,8 @@ select {
     font-family: Helvetica;
     font-style: normal;
     text-decoration: none;
-
 }
+
 
 .pages {
     display: flex;
@@ -63,17 +63,17 @@ select {
     color: white;
     width: 180px;
     padding: 10px 20px;
+}
     
 
-}
 
 .login {
     width: 120px;
     color: #3D9AE2;
     background-color: white;
     border: 1px solid #3D9AE2;
-
 }
+
 
 
 
