@@ -1,1 +1,2 @@
-"This directory contains files for the frontend" 
+# Learnify
+An EdTech Project

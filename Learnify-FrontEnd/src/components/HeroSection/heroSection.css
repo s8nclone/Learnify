@@ -1,0 +1,22 @@
+.hero-container {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 80dvh;
+    width: 100vw;
+    display: flex;
+}
+
+.hero-content {
+    margin: auto;
+    width: 20rem;
+}
+
+.search-box {
+    display: flex;
+    width: 150px;
+}
+
+.search-box>input {
+    height:2rem;
+}
