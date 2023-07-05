@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import Navbar from './Components/Header/Navbar'
 import HeroSection from './components/HeroSection/HeroSection'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <>
+      <Navbar/>
       <HeroSection />
       <Outlet />
       
