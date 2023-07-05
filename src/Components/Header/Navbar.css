@@ -10,7 +10,7 @@
 
 select {
     border: none;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 
@@ -35,8 +35,8 @@ select {
     padding: 8px 12px;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    font-size: 15px;
+    gap: 30px;
+    font-size: 17px;
 }
 
 .pages ul li:active {
