@@ -1,0 +1,87 @@
+.container {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    padding: 10px 110px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+select {
+    border: none;
+    font-size: 20px;
+}
+
+
+.logo {
+
+    padding: 8px 0px;
+    align-items: flex-start;
+
+    color: #3D9AE2;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+.pages ul li {
+    display: inline-block;
+
+    width: 50px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+
+.btn-container {
+    display: flex;
+    height: 100px;
+    width: 350px;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    border: none;
+}
+    
+.btn {
+    height: 55px;
+    border-radius: 8px;
+    font-size: 18px;
+
+}
+
+.forfree {
+    background-color: #3D9AE2;
+    color: white;
+    width: 150px;
+    
+
+}
+
+.login {
+    width: 120px;
+    color: #3D9AE2;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
