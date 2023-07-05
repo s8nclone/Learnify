@@ -1,0 +1,32 @@
+.frame-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color: #4D4D4D;
+    font-family: Helvetica;
+    text-align: center;
+    margin-top: 20px;
+}
+    
+
+    
+
+    
+
+.line {
+    height: 15px;
+    width: 1px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 15px;
+}
+
