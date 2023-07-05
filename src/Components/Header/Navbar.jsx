@@ -29,11 +29,13 @@ function Navbar() {
                     <li>Pricing</li>
 
                 </ul>
+                
+                <div className='btn-container'>
+                    <button className='login btn'>Log in</button>
+                    <button className='forfree btn'>Start for free</button>
+                </div>
             </div>
-            <div className='btn-container'>
-                <button className='login btn'>Log in</button>
-                <button className='forfree btn'>Start for free</button>
-            </div>
+            
 
         </div>
     )

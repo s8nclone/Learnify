@@ -1,68 +1,68 @@
 .container {
-    height: 50px;
+    height: 70px;
     display: flex;
-    background-color: white;
-    padding: 10px 110px;
+    padding: 16px 120px;
     justify-content: space-between;
     align-items: center;
-
-
+    align-self: stretch;
 }
 
 
 select {
     border: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
 .logo {
-
-    padding: 8px 0px;
     align-items: flex-start;
-
     color: #3D9AE2;
-    font-size: 32px;
+    font-size: 15px;
     font-family: Helvetica;
     font-style: normal;
     text-decoration: none;
 
 }
 
+.pages {
+    display: flex;
+    gap: 20px;
+}
+
+
 .pages ul li {
     display: inline-block;
-
-    width: 50px;
     padding: 8px 12px;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    font-size: 25px;
-    margin-left: 80px;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.pages ul li:active {
+    text-decoration: 2px solid #000 underline;
 }
 
 
 .btn-container {
     display: flex;
-    height: 100px;
-    width: 350px;
-    align-items: center;
     gap: 40px;
     font-size: 20px;
     border: none;
 }
     
 .btn {
-    height: 55px;
+    height: 45px;
     border-radius: 8px;
     font-size: 18px;
-
+    border: none;
 }
 
 .forfree {
     background-color: #3D9AE2;
     color: white;
-    width: 150px;
+    width: 180px;
+    padding: 10px 20px;
     
 
 }
@@ -71,9 +71,9 @@ select {
     width: 120px;
     color: #3D9AE2;
     background-color: white;
+    border: 1px solid #3D9AE2;
 
 }
-
 
 
 
