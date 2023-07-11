@@ -15,21 +15,21 @@
 
 .hero-content {
     margin: auto;
-    width: 30rem;
+    width: 35rem;
 }
 
 .search-box {
     display: flex;
-    width: 30rem;
     margin-bottom: 3rem;
 }
 
 .search-box>input {
     height:4rem;
-    width: 25em;
+    width: 30em;
     border: 1px solid #3D9AE2;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    padding: 1.5rem;
 }
 
 .search-box>button {
@@ -45,13 +45,13 @@
     height: 1.5rem;
 }
 
-h2 {
-    font-size: 3.5rem;
+.hero-text>h2 {
+    font-size: 4rem;
     line-height: normal;
 }
 
-p {
-    font-size: 1.3rem;
+.hero-text>p {
+    font-size: 1.5rem;
 }
 
 .gs-btn {
