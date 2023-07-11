@@ -1,0 +1,67 @@
+.certification-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cert-header>h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin-bottom: 5rem;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+}
+
+.cert-card {
+    border: 1px solid rgba(77, 77, 77, 0.50);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35rem;
+}
+
+.card-img>img {
+    width: calc(35rem - 1px);
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    object-fit: cover;
+}
+
+.card-text {
+    height: 18rem;
+    padding: 1.2rem;
+    color: #4D4D4D;
+}
+
+.card-text>h3 {
+    font-size: 2rem;
+    padding-bottom: .7rem;
+}
+
+.card-text>p {
+    font-size: 1.5rem;
+}
+
+.enrol-btn {
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: #3D9AE2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem .7rem;
+    font-weight: 700;
+}
+

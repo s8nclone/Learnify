@@ -18,10 +18,10 @@ function HeroSection() {
               <button><img src={searchBtn} alt="search logo"/></button>
             </div>
 
-            <div>
+            <div className="hero-text">
               <h2>Improve your skills Faster and Better</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Accusamus sed impedit, culpa, molestiae suscipit</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing. 
+                Nemo tempore debitis illum eos dolorum laudantium.</p>
             </div>
 
             <div className="gs-btn">
