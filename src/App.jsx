@@ -6,7 +6,9 @@ import HeroSection from './components/HeroSection/HeroSection'
 import ReviewFrame from './Components/ReviewSection/ReviewFrame'
 import Certification from './Components/CertificationSection/Certification'
 import Features from './Components/FeatureSection/Features'
+import Learners from './Components/LearnersSection/LearnersSection'
 import CollectionVideo from './Components/CollectionVideoSection/CollectionVideo'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,9 +18,10 @@ function App() {
       <Navbar/>
       <HeroSection />
       <ReviewFrame/>
-      <Features />
+      <Features/>
       <Certification />
       <CollectionVideo />
+      <Learners/>
       <Outlet />
       
     </>

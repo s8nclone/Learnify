@@ -1,0 +1,42 @@
+.learners-container {
+    padding: 20px;
+    height: 35rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.top {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+
+
+
+.testimony {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 12px;
+}
+
+.testimony i {
+    font-size: 17px;
+
+}
+
+
+
+
+
+
+.user1 {
+    flex-direction: column;
+}
+
+.click-btn {
+    display: flex;
+}
