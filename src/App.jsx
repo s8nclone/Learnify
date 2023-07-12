@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import ReviewFrame from './Components/ReviewSection/ReviewFrame'
 import Certification from './Components/CertificationSection/Certification'
 import Features from './Components/FeatureSection/Features'
+import CollectionVideo from './Components/CollectionVideoSection/CollectionVideo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <ReviewFrame/>
       <Features />
       <Certification />
+      <CollectionVideo />
       <Outlet />
       
     </>
