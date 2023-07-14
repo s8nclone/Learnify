@@ -5,11 +5,7 @@ import { FaqQuestions } from './faqQuestions';
 
 function FaqSection() {
 
-    const [openAccordion, setOpenAccordion] = useState(null);
-
-    const handleAccordionClick = (index) => {
-        setOpenAccordion(index === openAccordion ? null : index);
-    };
+    const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <>
@@ -23,9 +19,10 @@ function FaqSection() {
                     <Accordion 
                         key={index}
                         question={question} 
-                        answers={answers} 
-                        isOpen = {index === openAccordion}
-                        onClick = {() => handleAccordionClick(index)} 
+                        answers={answers}
+                        index={index}
+                        activeIndex={activeIndex}
+                        setActiveIndex={setActiveIndex}
                     />
                 ))}
             </div>
