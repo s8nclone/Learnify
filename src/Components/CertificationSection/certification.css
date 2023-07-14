@@ -19,15 +19,6 @@
     gap: 3rem 2rem;
 }
 
-.cert-card {
-    border: 1px solid rgba(77, 77, 77, 0.50);
-    border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 35rem;
-}
-
 .cert-card:hover {
     box-shadow: 0 .5rem 1rem rgba(77, 77, 77, 0.50);
     transform: scale(1.05);
@@ -35,7 +26,7 @@
 }
 
 .card-img>img {
-    width: calc(35rem - 1px);
+    width: 35rem;
     height: 17rem;
     display: flex;
     justify-content: center;
@@ -43,6 +34,15 @@
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     object-fit: cover;
+}
+
+.cert-card {
+    border: 1px solid rgba(77, 77, 77, 0.50);
+    border-radius: calc(1.5rem + 1px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(35rem + 1px);
 }
 
 .card-text {
