@@ -9,7 +9,8 @@ function CollectionVideo() {
         <div className="video-collection-flex">
             <div className="video-container" style={{ background: `linear-gradient(0deg, rgba(77, 77, 77, 0.44) 0%, rgba(77, 77, 77, 0.44) 100%), url(${tutorImg})`, 
                 backgroundRepeat: "no-repeat", 
-                backgroundSize: "cover"}}
+                backgroundSize: "cover",
+                backgroundPosition: "center"}}
             >
                 <img src={playLogo} alt="play logo" className="play-logo"/>
             </div>
