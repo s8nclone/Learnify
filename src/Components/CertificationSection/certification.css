@@ -28,6 +28,12 @@
     width: 35rem;
 }
 
+.cert-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(77, 77, 77, 0.50);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
 .card-img>img {
     width: calc(35rem - 1px);
     height: 17rem;

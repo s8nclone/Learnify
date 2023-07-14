@@ -10,7 +10,7 @@ function HeroSection() {
         <div className="hero-container" style={{ background: `linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(${backgroundImg})`, 
           backgroundRepeat: "no-repeat", 
           backgroundSize: "cover",
-          backgroundPosition: "right"}}
+          backgroundPosition: "50% 35%"}}
         >
           <div className="hero-content">
             <div className='search-box'>
