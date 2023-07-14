@@ -1,7 +1,7 @@
 .accordion {
-    max-width: 600px;
     margin: 2rem auto;
     min-height: 50vh;
+    background: rgba(61, 154, 226, 0.10);
 }
 
 .faq-h1 {
@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #fff;
+    /* background-color: #fff; */
     align-items: center;
     font-size: 1.5rem;
     
@@ -30,6 +30,8 @@
 .accordion-item {
     border-bottom: 1px solid rgba(77, 77, 77, 0.30);
     color: #4D4D4D;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .accordion-title,
@@ -37,8 +39,12 @@
     padding: 1rem;
 }
 
+.closed {
+    display: none;
+}
+
 .accordion-content {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding-left: 2rem;
     overflow: hidden;
     color: #3D9AE2;

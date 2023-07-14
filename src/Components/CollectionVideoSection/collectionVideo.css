@@ -4,38 +4,29 @@
 }
 
 .video-container {
+    width: 100%;
     display: flex;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .play-logo {
-    width: 6.25rem;
-    height: 6.25rem;
-    margin: auto;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 
-.meet-tutors {
-    background: #ECF5FC;
-    text-align: center;
-    padding: 7rem;
-    width: 50%;
-    color: #4D4D4D;
-}
-
-.meet-tutors_h2 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-
-.meet-tutors_blockquote {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-}
-
-.meet-tutors_h4 {
+.video-container-content {
+    width: 40rem;
+    color: #FFF;
     font-size: 2rem;
 }
 
-.meet-tutors_cite {
-    font-size: 1.5rem;
+.watch-video-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    gap: 1rem;
+    cursor: pointer;
 }

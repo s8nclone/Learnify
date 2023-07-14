@@ -4,30 +4,22 @@
     align-items: center;
     gap: 10%;
     color: #4D4D4D;
-    font-family: Helvetica;
     text-align: center;
-    height: 30px;
-    margin: 0 30px ;
-    padding: 50px;
+    margin: 1rem auto;
 }
-    
-
-    
-
-    
 
 .line {
-    height: 15px;
     width: 1px;
     font-size: 3rem;
     display: flex;
     align-items: center;
-    padding: 15px;
 }
+
 h1{
-    font-size: 25px;
+    font-size: 22px;
 }
+
 h2{
-    font-size: 15px;
+    font-size: 13px;
 }
 

@@ -4,7 +4,7 @@
     text-align: center; 
     color: #fff;
     display: flex;
-    height: 550px;
+    height: 500px;
 }
 
 .hero-content {
@@ -40,12 +40,13 @@
 }
 
 .hero-text>h2 {
-    font-size: 4rem;
+    font-size: 3.7rem;
     line-height: normal;
 }
 
 .hero-text>p {
-    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.4rem;
 }
 
 .gs-btn {
