@@ -4,9 +4,6 @@
     margin: 0 auto;
     text-align: center;
 }
-    
-
-
 
 .top {
     text-align: center;
@@ -14,19 +11,14 @@
     padding-bottom: 3rem;
 }
 
-
-
-
 .testimony {
     display: flex;
     gap: 3rem;
     font-size: 12px;
-    height: 35vh;
-    margin-bottom: 3rem;
    
 }
 
-.testimony i {
+.testimony em {
     font-size: 17px;
     font-weight: bold;
 

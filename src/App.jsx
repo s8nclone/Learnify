@@ -9,6 +9,7 @@ import Features from './Components/FeatureSection/Features'
 import CollectionVideo from './Components/CollectionVideoSection/CollectionVideo'
 import LearnersSection from './Components/LearnersSection/LearnersSection'
 import FaqSection from './Components/FAQSection/FaqSection'
+import Footer from './Components/FooterSection/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
       <CollectionVideo />
       <LearnersSection/>
       <FaqSection />
+      <Footer />
       <Outlet />
       
     </>

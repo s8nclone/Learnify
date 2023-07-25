@@ -1,0 +1,153 @@
+
+.search-wrapper {
+    width: 50%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    width: 35rem;
+    padding: 2px;
+    border: 1px solid #4D4D4D;
+    border-radius: .25rem;
+}
+
+input.search-field {
+    display: flex;
+    padding: 1rem 1.5rem;
+    flex: 1 0 0;
+    background: transparent;
+    color: inherit;
+    border: none;
+}
+
+input.search-field:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 4rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent;
+    cursor: pointer;
+    /* opacity: 0.7; */
+}
+
+button[type="submit"] img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footer-links-section {
+    background: #02243F;
+    color: #FFF;
+}
+
+.footer-links-section h3 {
+    font-size: 2rem;
+}
+
+.footer-links-section a{
+    text-decoration: none;
+}
+
+.mobile-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.app-button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    width: 13rem;
+    outline: none;
+    border: 1px solid #FFF;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+.app-button:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.app-button img {
+    width: 2.8rem;
+    height: 2.8rem; 
+}
+
+.app-button p {
+    font-size: 1.2rem;
+}
+
+.app-button h4 {
+    font-size: 1.5rem;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    gap: 7rem;
+}
+
+.footer-links li {
+    list-style: none;
+    padding-top: .5rem;
+    font-size: 1.3rem;
+}
+
+footer li a {
+    color: #FFF;
+}
+
+.footer-links li a:hover,
+.legal-links li a:hover {
+    text-decoration: underline;
+}
+
+.legal-links li img:hover {
+    transform: scale(1.2)
+}
+
+.legal {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 3rem auto;
+    gap: 2rem;
+
+}
+
+.legal-links li {
+    list-style: none;
+    display: inline;
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+}
