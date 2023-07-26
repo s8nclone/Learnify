@@ -1,5 +1,5 @@
 .features-container {
-    background: rgba(61, 154, 226, 0.10);
+    background: #F9FAFF;
     text-align: center;
     padding: 3rem 7rem;
 }
@@ -7,33 +7,51 @@
 .features-header>h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #4D4D4D;
     margin-bottom: 2rem;
-}
-
-.features-header>h2>span {
-    color: #1A73E8;
 }
 
 .features-flex {
     display: flex;
     gap: 3rem;
     justify-content: center;
+    margin: 2rem auto;
 }
 
 .features-card {
     background-color: #fff;
-    width: 20vw;
-    height: 25rem;
+    width: 22rem;
+    height: 20rem;
     padding: 2rem;
     border-radius: .8rem;
+    text-align: left;
+}
+
+.tutors-feature {
+    background: #B5DBFF;
+}
+
+.pace-feature {
+    background: #FFF2DD;
+}
+
+.cert-feature {
+    background: #FFE2F1;
+}
+
+.feature-img img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.feature-text {
     color: #4D4D4D;
 }
 
 .feature-text>h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 1rem auto;
 }
 
 .feature-text>p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
