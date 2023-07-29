@@ -10,6 +10,7 @@ import CollectionVideo from './Components/CollectionVideoSection/CollectionVideo
 import LearnersSection from './Components/LearnersSection/LearnersSection'
 import FaqSection from './Components/FAQSection/FaqSection'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,6 +25,7 @@ function App() {
       <LearnersSection/>
       <FaqSection />
       <Outlet />
+    
       
     </>
   )
