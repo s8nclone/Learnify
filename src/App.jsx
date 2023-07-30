@@ -8,6 +8,7 @@ import Certification from './Components/CertificationSection/Certification'
 import Features from './Components/FeatureSection/Features'
 import CollectionVideo from './Components/CollectionVideoSection/CollectionVideo'
 import LearnersSection from './Components/LearnersSection/LearnersSection'
+import LeaderSection from './Components/LeaderSection/LeaderSection'
 import FaqSection from './Components/FAQSection/FaqSection'
 import TutorSection from './Components/TutorSection/TutorSection'
 
