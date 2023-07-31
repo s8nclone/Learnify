@@ -49,9 +49,20 @@ select {
     text-decoration: none;
 }
 
-.pages ul li a:active {
+.pages ul li a:hover {
     color: #3D9AE2;
     text-decoration: none;
+}
+
+.pages ul li a {
+    /* color: #3D9AE2; */
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+.pages ul li a.active {
+    color: #3D9AE2;
+    font-size: 1.7rem;
 }
 
 .dropdown {
@@ -64,11 +75,12 @@ select {
     left: -130%;
     top: 100%;
     background: #FFF;
+    z-index: 100000;
 }
 
 .pages ul li:hover .dropdown ul {
     display: block;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
 }
 
 .pages ul li:hover .dropdown ul li {

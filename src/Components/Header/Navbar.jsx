@@ -1,6 +1,6 @@
 import './Navbar.css'
 import Arrow from '../../assets/forwardArrow.svg'
-import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 
 function Navbar() {
@@ -15,7 +15,7 @@ function Navbar() {
 
             <div className='pages'>
                 <ul>
-                    <li><Link to={"Home"}>Home</Link></li>
+                    {/* <li><NavLink to={"Home"}>Home</NavLink></li> */}
 
 
                     <li>Courses

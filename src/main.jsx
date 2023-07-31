@@ -4,11 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage.jsx'
-import HomePage from './pages/HomePage.jsx'
+import MainPage from './pages/MainPage.jsx'
+// import HomePage from './pages/HomePage.jsx'
 // import CoursesPage from './pages/CoursesPage.jsx'
 // import BlogPage from './pages/BlogPage.jsx'
 // import AboutUsPage from './pages/AboutUsPage.jsx'
-// import MainPage from './pages/MainPage.jsx'
 // import SignUpPage from './pages/SignUpPage.jsx'
 // import LoginPage from './pages/LoginPage.jsx'
 
@@ -19,9 +19,13 @@ const route = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "Home",
-        element: <HomePage />
+        path: "/",
+        element: <MainPage />
       },
+      // {
+      //   path: "Home",
+      //   element: <HomePage />
+      // },
       // {
       //   path: "Courses",
       //   element: <CoursesPage />
