@@ -1,10 +1,14 @@
 .container {
     height: 70px;
     display: flex;
-    padding: 16px 120px;
+    padding: 0 2rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    position: sticky;
+    top: 0;
+    z-index: 1000000000;
+    background: #FFF;
 }
 
 
@@ -14,65 +18,136 @@ select {
 }
 
 
-.logo {
+.logo h1{
     align-items: flex-start;
-    color: #3D9AE2;
-    font-size: 15px;
-    font-family: Helvetica;
-    font-style: normal;
+    font-size: 3rem;
     text-decoration: none;
 
 }
 
+.logo h1 a {
+    text-decoration: none;
+    color: #02243F;
+}
+
 .pages {
     display: flex;
-    gap: 20px;
+    gap: 5rem;
+    justify-content: space-between;
 }
 
+
+.pages ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+    font-size: 1.5rem;
+    list-style: none;
+    color: #4D4D4D;
+}
 
 .pages ul li {
-    display: inline-block;
-    padding: 8px 12px;
-    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.pages ul li:hover {
+    color: #3D9AE2;
+    text-decoration: none;
+}
+
+.pages ul li a:hover {
+    color: #3D9AE2;
+    text-decoration: none;
+}
+
+.pages ul li a {
+    /* color: #3D9AE2; */
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+.pages ul li a.active {
+    color: #3D9AE2;
+    font-size: 1.7rem;
+}
+
+.dropdown {
+    display: none;
+}
+
+.pages ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: -130%;
+    top: 100%;
+    background: #FFF;
+    z-index: 100000;
+}
+
+.pages ul li:hover .dropdown ul {
+    display: block;
+    margin: 2rem 2rem;
+}
+
+.pages ul li:hover .dropdown ul li {
+    width: 200px;
+    padding: 8px;
+}
+
+.pages ul li:hover .dropdown a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
     align-items: center;
-    gap: 30px;
-    font-size: 17px;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    white-space: nowrap;
 }
 
-.pages ul li:active {
-    text-decoration: 2px solid #000 underline;
+.pages ul li:hover .dropdown h4 {
+    max-width: 80%;
 }
-
 
 .btn-container {
     display: flex;
-    gap: 40px;
-    font-size: 20px;
+    gap: 3rem;
     border: none;
 }
     
 .btn {
-    height: 45px;
-    border-radius: 8px;
-    font-size: 18px;
+    height: 4.5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
     border: none;
 }
 
 .forfree {
-    background-color: #3D9AE2;
-    color: white;
-    width: 180px;
-    padding: 10px 20px;
-    
+    background: #02243F;
+    color: #FFF;
+    width: 13rem;
+    padding: 5px;
+}
 
+.forfree:hover {
+    outline: none;
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
 }
 
 .login {
     width: 120px;
-    color: #3D9AE2;
-    background-color: white;
-    border: 1px solid #3D9AE2;
+    color: #02243F;
+    background-color: transparent;
+    border: none;
+}
 
+.login:hover {
+    border: 1px solid #02243F;
+    outline: none;
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
 }
 
 

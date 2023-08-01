@@ -1,6 +1,6 @@
 .video-collection-flex {
     display: flex;
-    height: 40rem;
+    height: 50rem;
 }
 
 .video-container {
@@ -11,13 +11,20 @@
     text-align: center;
 }
 
+.play-container {
+    background: #3D9AE2;
+    border-radius: 5rem;
+    padding: 1.1rem 1.1rem 1.1rem 1.5rem;
+    display: flex;
+}
+
 .play-logo {
-    width: 4.25rem;
-    height: 4.25rem;
+    width: 2.125rem;
+    height: 2.125rem;
 }
 
 .video-container-content {
-    width: 40rem;
+    width: 50rem;
     color: #FFF;
     font-size: 2rem;
 }

@@ -10,9 +10,7 @@ function FaqSection() {
   return (
     <>
         <div className="accordion">
-            <div>
-                <h1 className="faq-h1">FAQs</h1>
-            </div>
+            <h1 className="faq-h1">Frequently asked questions</h1>
 
             <div>
                 {FaqQuestions.map(({ question, answers }, index) => (
