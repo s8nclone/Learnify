@@ -9,8 +9,8 @@ import MainPage from './pages/MainPage.jsx'
 // import CoursesPage from './pages/CoursesPage.jsx'
 // import BlogPage from './pages/BlogPage.jsx'
 // import AboutUsPage from './pages/AboutUsPage.jsx'
-// import SignUpPage from './pages/SignUpPage.jsx'
-// import LoginPage from './pages/LoginPage.jsx'
+import SignUpPage from './pages/SignUpPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
 
 const route = createBrowserRouter([
   {
@@ -38,16 +38,19 @@ const route = createBrowserRouter([
       //   path: "AboutUs",
       //   element: <AboutUsPage />
       // },
-      // {
-      //   path: "SignUp",
-      //   element: <SignUpPage />
-      // },
-      // {
-      //   path: "Login",
-      //   element: <LoginPage />
-      // },
     ]
+  },
+
+  {
+    path: "/login",
+    element: <LoginPage />
+  },
+
+  {
+    path: "/signup",
+    element: <SignUpPage />
   }
+
 ])
 
 

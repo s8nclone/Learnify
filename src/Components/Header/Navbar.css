@@ -106,6 +106,10 @@ select {
     white-space: nowrap;
 }
 
+.pages ul li:hover .dropdown li:hover {
+    background: #4d4d4d27;
+}
+
 .pages ul li:hover .dropdown h4 {
     max-width: 80%;
 }
@@ -116,11 +120,17 @@ select {
     border: none;
 }
     
-.btn {
+.nav-btn {
     height: 4.5rem;
     border-radius: .5rem;
     font-size: 1.5rem;
     border: none;
+    cursor: pointer;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .forfree {

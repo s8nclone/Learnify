@@ -42,8 +42,8 @@ function Navbar() {
                 </ul>
                 
                 <div className='btn-container'>
-                    <button className='login btn'>Log in</button>
-                    <button className='forfree btn'>Start for free</button>
+                    <Link to={"login"}><button className='login nav-btn'>Log in</button></Link>
+                    <Link to={"signup"}><button className='forfree nav-btn'>Start for free</button></Link>
                 </div>
             </div>
             
