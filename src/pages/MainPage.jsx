@@ -6,6 +6,8 @@ import Features from '../Components/FeatureSection/Features'
 import CollectionVideo from '../Components/CollectionVideoSection/CollectionVideo'
 import LearnersSection from '../Components/LearnersSection/LearnersSection'
 import FaqSection from '../Components/FAQSection/FaqSection'
+import TutorSection from '../Components/TutorSection/TutorSection'
+import LeaderSection from '../Components/LeaderSection/LeaderSection'
 
 export default function MainPage() {
     return (
@@ -17,6 +19,8 @@ export default function MainPage() {
             <CollectionVideo />
             <LearnersSection />
             <FaqSection />
+            <TutorSection />
+            <LeaderSection />
         </>
     )
 }

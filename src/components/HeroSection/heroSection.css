@@ -134,10 +134,13 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+.get-started-btn:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+    outline: none;
+}
+
 .bgdImage-wrapper {
     z-index: 1000;
     margin: 0 -3rem;
-}
-
-.bgdImage-wrapper img {
 }

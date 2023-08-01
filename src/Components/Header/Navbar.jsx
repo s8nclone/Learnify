@@ -1,6 +1,7 @@
 import './Navbar.css'
 import Arrow from '../../assets/forwardArrow.svg'
 // import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
 
 
             <div className='logo'>
-                <h1>Learnify</h1>
+                <h1><Link to={"/"}>Learnify</Link></h1>
             </div>
 
             <div className='pages'>
