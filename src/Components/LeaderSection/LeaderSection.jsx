@@ -3,44 +3,44 @@ import './LeaderSection.css'
 import userdp1 from '../../assets/userdp1.png'
 import userdp2 from '../../assets/userdp2.png'
 import userdp3 from '../../assets/userdp3.png'
+import userdp4 from '../../assets/userdp4.png'
 
 
 function LeaderSection(){
 
 return(
   <>
-  <div className='learners-con'>
-      <div className='topp'>
-          <h1>Meet Your Leaders</h1>
+  <div className="leaders-container">
+      <div className="topp">
+          <h1>Meet your leaders</h1>
 
       </div>
-      <div className='testimoni '>
+      <div className="leaders-card">
 
-          <div className='cardd'>
-              <img src={userdp1} alt="user1" />
-              <h2>Ike Chinwedu</h2>
-              <h4>Founder</h4>
+          <div className="cardd">
+              <img src={userdp1} alt="user1" className="leader-img" />
+              <p className="leader-name">Ike Chinwedu</p>
+              <h2 className="leader-position">Founder</h2>
           </div>
-          <div className='cardd'>
-              <img src={userdp1} alt="user1 " />
-              <h2>Ike Chinwedu</h2>
-              <h4>Co-founder</h4>
+          <div className="cardd">
+              <img src={userdp2} alt="user2" className="leader-img"/>
+              <p className="leader-name">Ike Chinwedu</p>
+              <h2 className="leader-position">Co-founder</h2>
           </div>
-          <div className='cardd'>
-              <img src={userdp2} alt="user2" />
-              <h2>Ike Chinwedu</h2>
-              <h4>CEO</h4>
+          <div className="cardd">
+              <img src={userdp4} alt="user3" className="leader-img" />
+              <p className="leader-name">Ike Chinwedu</p>
+              <h2 className="leader-position">CEO</h2>
           </div>
-          <div className='cardd'>
-              <img src={userdp3} alt="user3" />
-              <h2>Ike Chinwedu</h2>
-              <h4>MD</h4>
+          <div className="cardd">
+              <img src={userdp3} alt="user4" className="leader-img" />
+              <p className="leader-name">Ike Chinwedu</p>
+              <h2 className="leader-position">MD</h2>
           </div>
 
       </div>
-      <div>
-         <h2 class='seee'> <a href="">See More</a></h2>
-      </div>
+      
+      <button className="click-btn">See more</button>
 
   </div>
 </>

@@ -12,14 +12,17 @@ html {
 }
 
 .click-btn {
-  border: 1px solid #3D9AE2;
-  border-radius: .5rem;
-  color: #3D9AE2;
-  font-family: Helvetica;
+  border: none;
+  color: #02243F;
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem;
   background: none;
   margin: 3rem auto;
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.click-btn:hover {
+  transform: scale(1.05);
+  transition: .2s ease-in-out;
 }
