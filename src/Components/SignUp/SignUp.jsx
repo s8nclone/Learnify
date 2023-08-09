@@ -35,9 +35,7 @@ function SignUp() {
           </div>
           <div className='checkbox'>
             <img src={Button} alt='checkbox' />
-            <sup>
-              <label for='checkbox'> Accept Learnify<u>Terms and Condition</u>  </label>
-            </sup>
+            <label for='checkbox'> Accept Learnify<a href="#">Terms and Condition</a>  </label>
           </div>
           <div className='c-btn'>
             <button>Create Account</button>
@@ -48,15 +46,16 @@ function SignUp() {
           </div>
 
           <div className='social-logo'>
-            <div className='gl'>
-              <img src={gl} width='20rem' height='18rem' alt="google-logo" />
-              <h2>Google</h2>
-            </div>
-
-            <div className='fb'>
-              <img src={fl} width='20rem' height='18rem' alt="facebook-logo" />
-              <h2>Facebook</h2>
-            </div>
+            <a href="#"><button className="apps-button">
+                    <img src={gl} alt="google logo"/>
+                    <p className="app-name">G<span className="o">o</span><span className="oo">o</span><span className="g">g</span>le</p>
+                </button>
+              </a>
+            <a href="#"><button className="apps-button">
+                    <img src={fl} alt="facebook logo" />
+                    <p className="app-name">Facebook</p>
+                </button>
+              </a>
           </div>
 
         </form>
