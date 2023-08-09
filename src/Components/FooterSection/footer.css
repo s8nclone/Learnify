@@ -97,8 +97,9 @@ button[type="submit"] img {
     font-size: 1.2rem;
 }
 
-.app-button h4 {
+.app-button span {
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .footer-wrapper {

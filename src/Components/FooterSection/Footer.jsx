@@ -31,12 +31,12 @@ function Footer() {
                         <div className="mobile-icons">
                             <a href="#"><button className="app-button">
                                 <img src={appleLogo} alt="apple logo" />
-                                <p>Available on <br/><h4>App store</h4></p>
+                                <p>Available on <br/><span>App store</span></p>
                                 </button>
                             </a>
                             <a href="#"><button className="app-button">
                                 <img src={googlePlay} alt="apple logo" />
-                                <p>Available on <br/> <h4>App store</h4></p>
+                                <p>Available on <br/> <span>App store</span></p>
                                 </button>
                             </a>
                         </div>
