@@ -11,7 +11,6 @@ import Navbar from './Components/Header/Navbar'
 // import FaqSection from './Components/FAQSection/FaqSection'
 import Footer from './Components/FooterSection/Footer'
 
-
 function App() {
   const [count, setCount] = useState(0)
 

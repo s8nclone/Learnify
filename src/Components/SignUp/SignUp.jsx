@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './SignUp.css'
 import Button from '../../assets/Button.svg'
 import gl from '../../assets/google-logo.svg'
@@ -62,23 +61,9 @@ function SignUp() {
 
         </form>
 
-
-
-
-
-
       </div>
     </>
   )
 }
 
 export default SignUp;
-
-
-
-
-
-
-
-
-
