@@ -20,6 +20,13 @@ function Features() {
                         <p>By scheduling and Downloading your  Courses, you can learn anywhere and any time </p>
                     </div>
                 </div>
+                <div className="features-card language-feature">
+                    <div className="feature-img"><img alt="feature icon" src={certificateFeature}/></div>
+                    <div className="feature-text">
+                        <h3>Learn in your preferred language</h3>
+                        <p>By scheduling and Downloading your  Courses, you can learn anywhere and any time </p>
+                    </div>
+                </div>
                 <div className="features-card pace-feature">
                     <div className="feature-img"><img alt="feature icon" src={paceFeature}/></div>
                     <div className="feature-text">
