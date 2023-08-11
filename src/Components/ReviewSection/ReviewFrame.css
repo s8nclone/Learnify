@@ -2,24 +2,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 4rem;
     color: #4D4D4D;
     text-align: center;
-    margin: 1rem auto;
+    padding: 2rem;
+
 }
 
 .line {
-    width: 1px;
-    font-size: 3rem;
+    width: .5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
+    color: #4D4D4D;
 }
 
 h1{
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 h2{
-    font-size: 13px;
+    font-size: 1.2rem;
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import './TutorSection.css'
 import tutorsectionimg from '../../assets/tutorsectionimg.png'
+
+
 function TutorSection (){
 
   return(
@@ -8,15 +10,15 @@ function TutorSection (){
     <div className="tutor-container">
       <div className='b-tutor'>
         <h1>Become a Tutor</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> 
-          Aperiam qui error veritatis sed molestias cupiditate exercitationem.<br/> 
-          Nemo cum odit asperiores saepe, tenetur nisi totam dolor aspernatur<br/> 
-          praesentium soluta a quibusdam dolore impedit quam.<br/> 
-          Quae molestiae mollitia, culpa eum architecto debitis!</p>
-         <button className='tutor-btn'>Join us Now</button>
+        <p>Are you a passionate and qualified teacher who 
+            adapts to student needs, can have an open and
+            honest relationship with students?
+            Learnify might be the best place for you.
+        </p>
+         <button className='tutor-btn'>Join us now</button>
       </div>
       <div className='ts-img'>
-      <img src={tutorsectionimg}  height='500rem' width='600rem' alt="tutorsectionimage" />
+        <img src={tutorsectionimg} alt="tutor image" />
       </div>
     </div>
     </>

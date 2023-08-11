@@ -1,45 +1,46 @@
-.learners-con {
+.leaders-container {
   padding: 20px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
   background: #F9FAFF;
-  margin-top: -5rem;
+  color: #4D4D4D;
 }
   
 .topp {
-  text-align: center;
-  justify-content: center;
-  padding-bottom: 3rem;
+  padding: 2rem 0;
 }
 
-.testimoni {
+.leader-name {
+  font-size: 2rem;
+}
+
+.leader-position {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.leader-img {
+  height: 10rem;
+}
+
+.leaders-card {
   display: flex;
-  gap: 12rem;
   font-size: 12px;
   height: 20vh;
-  width: 140rem;
-  margin: 0 auto;
-  /* border: 1px solid red; */
+  width: 70%;
+  margin: 2rem auto;
 }
 
 .cardd {
-  width: 17%;
+  width: 20rem ;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-  gap: 0.5rem;
   height: 15rem;
 }
-  
 
-.seee  {
-  font-size: 1.5rem;
-  color: black;
-  background: #F9FAFF;
-  color: black;
-}
   
   
 

@@ -1,73 +1,82 @@
 .certification-container {
-    margin: 0 auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
 }
 
 .cert-header>h2 {
     font-size: 3rem;
     font-weight: 700;
     color: #4D4D4D;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .certification-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem 2rem;
+    margin: 2rem auto;
+    
+}
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    outline: none;
+    box-shadow: 0 .1rem .5rem rgba(77, 77, 77, 0.50);
 }
 
 .cert-card:hover {
+    border: none;
+    outline: none;
     box-shadow: 0 .5rem 1rem rgba(77, 77, 77, 0.50);
     transform: scale(1.05);
     transition: all .3s ease-in-out;
 }
 
 .card-img>img {
-    width: 35rem;
-    height: 17rem;
+    width: inherit;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
     object-fit: cover;
-}
-
-.cert-card {
-    border: 1px solid rgba(77, 77, 77, 0.50);
-    border-radius: calc(1.5rem + 1px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: calc(35rem + 1px);
+    border: none;
+    outline: none;
 }
 
 .card-text {
-    height: 18rem;
-    padding: 1.2rem;
+    padding: .8rem;
     color: #4D4D4D;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.card-text a {
+    text-decoration: none;
 }
 
 .card-text>h3 {
-    font-size: 2rem;
-    padding-bottom: .7rem;
-}
-
-.card-text>p {
     font-size: 1.5rem;
 }
 
 .enrol-btn {
+    font-size: 1.5rem;
     cursor: pointer;
-    font-size: 1.7rem;
     color: #3D9AE2;
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 2rem .7rem;
-    font-weight: 700;
+    padding: .3rem 0;
+    font-weight: 600;
+}
+
+.enrol-btn:hover {
+    text-decoration: underline;
 }
 

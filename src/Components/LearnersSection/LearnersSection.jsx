@@ -1,41 +1,64 @@
+import React from 'react'
 import './LearnersSection.css'
-import userdp1 from '../../assets/userdp1.png'
-import userdp2 from '../../assets/userdp2.png'
-import userdp3 from '../../assets/userdp3.png'
+import { data } from './Reviews'
+import {
+  StackedCarousel,
+  ResponsiveContainer
+} from "react-stacked-center-carousel"
+import { Slide } from "./Slides"
+import ArrowBackIcon from '../../assets/keyboardArrowLeft.svg'
+import ArrowForwardIcon from '../../assets/keyboardArrowRight.svg'
+
 function Learners() {
+    const ref = React.useRef(StackedCarousel);
+
     return (
         <>
-            <div className='learners-container'>
-                <div className='top'>
-                    <h1>What Learners are saying.</h1>
+            <div className="learners-container">
+                <div className="top">
+                    <h1>From Learnify Community</h1>
 
                 </div>
-                <div className='testimony '>
 
-                    <div className='card'>
-                        <img src={userdp1} alt="user1" />
-                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit. Quaerat voluptas tenetur molestiae aliquid corporis. Nesciunt pariatur sint quia, atque deleniti temporibus nulla architecto eaque minima fugit, cumque est reiciendis praesentium tenetur, maxime minus? Fugiat temporibus dicta magnam tempore id! Dolores.</p>
-                        <i>Adaora Eze</i>
-                    </div>
-                    <div className='card'>
-                        <img src={userdp1} alt="user1 " />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas tenetur molestiae aliquid corporis. Nesciunt pariatur sint quia, atque deleniti temporibus nulla architecto eaque minima fugit, cumque est reiciendis praesentium tenetur, maxime minus? Fugiat temporibus dicta magnam tempore id! Dolores.</p>
-                        <i>Adaora Eze</i>
-                    </div>
-                    <div className='card'>
-                        <img src={userdp2} alt="user2" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas tenetur molestiae aliquid corporis. Nesciunt pariatur sint quia, atque deleniti temporibus nulla architecto eaque minima fugit, cumque est reiciendis praesentium tenetur, maxime minus? Fugiat temporibus dicta magnam tempore id! Dolores.</p>
-                        <i>Segun Ayo</i>
-                    </div>
-                    <div className='card'>
-                        <img src={userdp3} alt="user3" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas tenetur molestiae aliquid corporis. Nesciunt pariatur sint quia, atque deleniti temporibus nulla architecto eaque minima fugit, cumque est reiciendis praesentium tenetur, maxime minus? Fugiat temporibus dicta magnam tempore id! Dolores.</p>
-                        <i>Abbah Abubakar</i>
+                <div className="card  card-carrier">
+                    <div className="carousel-wrapper">
+                        <button
+                            className="card-button"
+                            onClick={() => ref.current?.goBack()}
+                        >
+                            <img src={ArrowBackIcon} />
+                        </button>
+                        <ResponsiveContainer
+                            carouselRef={ref}
+                            render={(width, carouselRef) => {
+                                let currentVisibleSlide = 3;
+                                if (width <= 1280) currentVisibleSlide = 3;
+                                if (width <= 720) currentVisibleSlide = 1;
+                                return (
+                                    <StackedCarousel
+                                        ref={carouselRef}
+                                        slideComponent={Slide}
+                                        slideWidth={400}
+                                        carouselWidth={width}
+                                        data={data}
+                                        maxVisibleSlide={3}
+                                        disableSwipe
+                                        customScales={[1, 0.7, 0.2]}
+                                        transitionTime={450}
+                                        currentVisibleSlide={currentVisibleSlide}
+                                    />
+                                );
+                            }}
+                        />
+
+                        <button
+                            className="card-button"
+                            onClick={() => ref.current?.goNext()}
+                        >
+                            <img src={ArrowForwardIcon} />
+                        </button>
                     </div>
 
-                </div>
-                <div>
-                    <button className='click-btn'>Click for more</button>
                 </div>
 
             </div>
