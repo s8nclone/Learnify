@@ -34,11 +34,11 @@ const route = createBrowserRouter([
       //   path: "Blog",
       //   element: <BlogPage />
       // },
-       {
+      //  {
         
-         path: "AboutUs",
-         element: <AboutUsPage />
-      },
+      //    path: "AboutUs",
+      //    element: <AboutUsPage />
+      // },
     ]
   },
 
