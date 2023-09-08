@@ -20,7 +20,7 @@ function Navbar() {
 
 
                     <li>Courses
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <ul>
                                 <li><a href="#"><h5>Development </h5><img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
                                 <li><a href="#"><h5>IT & Software</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
