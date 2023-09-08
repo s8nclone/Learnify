@@ -3,7 +3,8 @@ import './SignUp.css'
 import Button from '../../assets/Button.svg'
 import gl from '../../assets/google-logo.svg'
 import fl from '../../assets/fl.svg'
-import spbimg from '../../assets/card.png'
+import spbimg from '../../assets/signupBackgroundImage.jpg'
+
 
 function SignUp() {
   return (
@@ -11,54 +12,58 @@ function SignUp() {
       <div className='signup-container'>
 
         <div className='paragraph-container'>
-          <img src={spbimg} height='646rem' width='600rem' alt='backgound image' />
-        </div>
-
-        <form action='' method='' className='details-container'>
-          <div>
-            <h1>Create Account</h1>
+          <div className='spbimg'>
+         </div>
+          <div className='signup-note'>
+            <h3 className='h3'>Welcome!!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Provident, expedita.
+              Quidem laudantium asperiores voluptatem  magnam cum blanditiis,
+              optio natus totam!
+            </p>
           </div>
-          <div className='nam'>
-
-            <div>
-              <input className='nam1' type="text" placeholder='First Name' />
+        </div>
+        <div className='details-container'> 
+        
+            <div className='txt-h'>
+              <h1>Create Account</h1>
             </div>
-            <div>
+
+
+          <form className='signup-form' action='' method='' >
+            <div className='nam'>
+              <input className='nam1' type="text" placeholder='First Name' />
               <input className='nam2' type="text" placeholder='Last Name' />
             </div>
-          </div>
-          <div className='email'>
-            <input type="text" placeholder='email' />
-          </div>
-          <div className='password'>
-            <input type="password" placeholder='Password' />
-          </div>
-          <div className='checkbox'>
-            <img src={Button} alt='checkbox' />
-            <label for='checkbox'> Accept Learnify<a href="#">Terms and Condition</a>  </label>
-          </div>
-          <div className='c-btn'>
-            <button>Create Account</button>
-            <p>Already a member? <a href="#">Log In</a></p>
-          </div>
-          <div className='hr' style={{ display: 'flex', width: '450px', alignItems: 'center', gap: '10px' }}>
-            <hr style={{ width: '23rem', height: '0.5px' }} /><p>or</p><hr style={{ width: '23rem' }} />
+            
+              <input type="text" placeholder='email' />
+              <input type="password" placeholder='Password' />
+            <div className='checkbox'>
+              <img src={Button} alt='checkbox' />
+              <label for='checkbox'> Accept Learnify<a href="#">Terms and Condition</a>  </label>
+            </div>
+              <input type='submit' value='Create Account' className='createacct-btn' />
+          </form>
+           
+          <p  className = 'memlink'>Already a member? <a href="#">Log In</a></p>
+          
+          <div className='hr' style={{ display: 'flex', width: '50rem', alignItems: 'center', gap: '10px' }}>
+            <hr style={{ width: '24rem', height: '0.5px' }} /><h3>or</h3><hr style={{ width: '24rem' }} />
           </div>
 
           <div className='social-logo'>
             <a href="#"><button className="apps-button">
-                    <img src={gl} alt="google logo"/>
-                    <p className="app-name">G<span className="o">o</span><span className="oo">o</span><span className="g">g</span>le</p>
-                </button>
-              </a>
+              <img src={gl} alt="google logo" />
+              <p className="app-name">G<span className="o">o</span><span className="oo">o</span><span className="g">g</span>le</p>
+            </button>
+            </a>
             <a href="#"><button className="apps-button">
-                    <img src={fl} alt="facebook logo" />
-                    <p className="app-name">Facebook</p>
-                </button>
-              </a>
+              <img src={fl} alt="facebook logo" />
+              <p className="app-name">Facebook</p>
+            </button>
+            </a>
           </div>
 
-        </form>
+        </div>
 
       </div>
     </>

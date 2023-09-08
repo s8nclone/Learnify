@@ -1,25 +1,69 @@
 .signup-container {
   display: flex;
   height: 100vh;
-  width: 100%;
-  margin-top: -3rem;
 }
 
 .paragraph-container {
   height: 100%;
-  justify-content: center;
+  width: 50%;
   align-items: center;
+  display: flex;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.48) 100%), url("../../assets/signupBackgroundImage.jpg"), lightgray 50% ;
+  background-position: 50%;
+  background-size: cover;
 }
 
 .details-container {
-  display: grid;
-  box-sizing: border-box;
-  align-items: flex-end;
-  justify-content: center;
   margin: 0 auto;
+  padding: 10rem 7rem;
   width: 50%;
   text-align: center;
   background-color: #FFFFFF;
+}
+.signup-note{
+  color: #E5E9EF;
+  padding: 5rem 10rem;
+  height: 20rem;
+  background: rgba(229, 233, 239, 0.17);
+  text-align: center;
+}
+ .memlink {
+  text-align: left;
+  font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0.8rem;
+}
+
+.memlink a {
+  color: #3D9AE2;
+  text-decoration: none;
+}
+ 
+
+.hr{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+  
+  
+.h3 {
+  font-size: 2.8rem;
+  font-weight: 2rem;
+}
+ 
+.signup-form {
+  width: 50rem;
+}
+
+.signup-note p {
+  font-size: 1.2rem;
+}
+  
+.txt-h{
+  margin-top: -7rem;
+  display:flex;
+  justify-content: center;
 }
 
 .social-logo {
@@ -33,15 +77,9 @@ input {
 
 .nam {
   display: flex;
-  gap: 3.5rem;
+  gap: 2rem; 
+  width: 100%;
 
-}
-
-.nam1,
-.nam2 {
-  border: 1px solid #4D4D4D;
-  background: #FFF;
-  border-radius: 0.8rem;
 }
 
 .details-container h1 {
@@ -52,39 +90,27 @@ input {
   margin: 2rem;
 }
 
-.email input {
-  width: 44rem;
+.signup-form input {
+  width: 100%;
   height: 4rem;
-  margin-top: -4rem;
   border: 1px solid #4D4D4D;
   background: #FFF;
   border-radius: 0.8rem;
-
-}
-
-.password input {
-  width: 44rem;
-  height: 4rem;
-  margin-top: -4rem;
-  border: 1px solid #4D4D4D;
-  background: #FFF;
-  border-radius: 0.8rem;
+  margin-top: 2rem;
 }
 
 .nam input {
-  width: 20rem;
-  height: 4.3rem;
+  width: 24rem;
 }
 
-.c-btn button {
-  width: 44rem;
-  height: 4rem;
-  border-radius: 0.8rem;
+.signup-form input[type= "submit"] {
   background: #02243F;
-  color: white;
   border: none;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: .5rem;
+  width: 100%;
 }
-
 .checkbox {
   display: flex;
   align-items: center;
@@ -93,10 +119,11 @@ input {
   color: #4D4D4D;
   text-align: start;
   gap: .5rem;
-  margin-top: -3rem;
   text-indent: 1rem;
   word-spacing: 0.5;
+  margin-top: 1rem;
 }
+  
 
 .c-btn p {
   font-size: 1.2rem;
@@ -113,8 +140,8 @@ input {
   border-radius: 8px;
   gap: 2rem;
   margin-bottom: 3rem;
-
 }
+
 
 .social-logo a {
   text-decoration: none;
@@ -146,6 +173,3 @@ input {
   text-indent: 1.5rem;
 }
 
-/* form {
-  margin: 2rem;
-} */
