@@ -1,0 +1,56 @@
+.leaders-container {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #F9FAFF;
+  color: #4D4D4D;
+}
+  
+.topp {
+  padding: 2rem 0;
+}
+
+.leader-name {
+  font-size: 2rem;
+}
+
+.leader-position {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.leader-img {
+  height: 10rem;
+}
+
+.leaders-card {
+  display: flex;
+  font-size: 12px;
+  height: 20vh;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.cardd {
+  width: 20rem ;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  height: 15rem;
+}
+
+  
+  
+
+
+
+
+
+  
+
+
+
+  
+

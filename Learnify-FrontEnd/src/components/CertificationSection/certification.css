@@ -1,0 +1,82 @@
+.certification-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cert-header>h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin-bottom: 2rem;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2rem;
+    margin: 2rem auto;
+    
+}
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    outline: none;
+    box-shadow: 0 .1rem .5rem rgba(77, 77, 77, 0.50);
+}
+
+.cert-card:hover {
+    border: none;
+    outline: none;
+    box-shadow: 0 .5rem 1rem rgba(77, 77, 77, 0.50);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
+.card-img>img {
+    width: inherit;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border: none;
+    outline: none;
+}
+
+.card-text {
+    padding: .8rem;
+    color: #4D4D4D;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.card-text a {
+    text-decoration: none;
+}
+
+.card-text>h3 {
+    font-size: 1.5rem;
+}
+
+.enrol-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #3D9AE2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .3rem 0;
+    font-weight: 600;
+}
+
+.enrol-btn:hover {
+    text-decoration: underline;
+}
+
