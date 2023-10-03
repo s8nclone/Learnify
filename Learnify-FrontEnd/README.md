@@ -1,2 +1,0 @@
-# Learnify
-An EdTech Project
