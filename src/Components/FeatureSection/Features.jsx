@@ -3,6 +3,7 @@ import './features.css'
 import amazingTutors from '../../assets/amazingTutorsImg.svg'
 import paceFeature from '../../assets/paceFeatureImg.svg'
 import certificateFeature from '../../assets/certificateFeatureImg.svg'
+import lanuageFeature from '../../assets/languageFeatureImg.svg'
 
 function Features() {
   return (
@@ -21,7 +22,7 @@ function Features() {
                     </div>
                 </div>
                 <div className="features-card language-feature">
-                    <div className="feature-img"><img alt="feature icon" src={certificateFeature}/></div>
+                    <div className="feature-img"><img alt="feature icon" src={lanuageFeature}/></div>
                     <div className="feature-text">
                         <h3>Learn in your preferred language</h3>
                         <p>By scheduling and Downloading your  Courses, you can learn anywhere and any time </p>

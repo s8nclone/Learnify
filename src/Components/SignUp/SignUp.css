@@ -13,33 +13,43 @@
   background-size: cover;
 }
 
-.details-container {
-  margin: 0 auto;
-  padding: 10rem 7rem;
+.details-aside {
   width: 50%;
+}
+
+.details-container {
+  margin: 10rem auto;
+  width: 40rem;
   text-align: center;
   background-color: #FFFFFF;
 }
-.signup-note{
+
+.signup-note {
   color: #E5E9EF;
-  padding: 5rem 10rem;
+  padding: 2rem 5rem;
   height: 20rem;
   background: rgba(229, 233, 239, 0.17);
-  text-align: center;
-}
- .memlink {
-  text-align: left;
-  font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top: 0.8rem;
+  width: 100%;
 }
 
-.memlink a {
+.memlink {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  color: #4D4D4D;
+}
+
+.memlink>a {
   color: #3D9AE2;
   text-decoration: none;
 }
- 
+
+.memlink>a:hover {
+  color: #02243F;
+}
 
 .hr{
   margin-top: 3rem;
@@ -48,31 +58,27 @@ margin-top: 0.8rem;
   
   
 .h3 {
-  font-size: 2.8rem;
-  font-weight: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #4D4D4D;
 }
  
-.signup-form {
-  width: 50rem;
+.welcome-header {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .signup-note p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  width: 36rem;
+
 }
   
 .txt-h{
   margin-top: -7rem;
   display:flex;
   justify-content: center;
-}
-
-.social-logo {
-  display: grid;
-}
-
-input {
-  padding: 0.7rem;
-
+  color: #4D4D4D;
 }
 
 .nam {
@@ -80,6 +86,19 @@ input {
   gap: 2rem; 
   width: 100%;
 
+}
+
+.nam1,
+.nam2,
+.email,
+.password {
+  padding: .5rem;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #4D4D4D;
+  background: #FFF;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
 }
 
 .details-container h1 {
@@ -90,86 +109,54 @@ input {
   margin: 2rem;
 }
 
-.signup-form input {
-  width: 100%;
-  height: 4rem;
-  border: 1px solid #4D4D4D;
-  background: #FFF;
-  border-radius: 0.8rem;
-  margin-top: 2rem;
-}
-
 .nam input {
-  width: 24rem;
+  width: 20rem;
 }
 
 .signup-form input[type= "submit"] {
-  background: #02243F;
+  background-color: #02243F;
   border: none;
   color: #FFF;
   cursor: pointer;
   border-radius: .5rem;
   width: 100%;
+  height: 4rem;
+  margin: 2rem 0;
 }
-.checkbox {
+
+.check-box {
   display: flex;
-  align-items: center;
-  font-size: 1.5rem;
   font-weight: 400;
-  color: #4D4D4D;
-  text-align: start;
-  gap: .5rem;
-  text-indent: 1rem;
-  word-spacing: 0.5;
-  margin-top: 1rem;
+  color: #3A3A3A;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 1rem 0;
+}
+
+.check-box input[type="checkbox"] {
+  height: 1.5rem;
+  width: 1.5rem;
 }
   
-
-.c-btn p {
-  font-size: 1.2rem;
-  font-weight: 200;
-  text-align: start;
+.tandc {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
+.tandc>a {
+  color: #3A3A3A;
+}
 
-.c-btn p a {
-  text-decoration: none;
+.tandc>a:hover {
+  color: #3D9AE2;
 }
 
 .social-logo {
-  border-radius: 8px;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-
 
 .social-logo a {
   text-decoration: none;
 }
-
-.gl {
-  border: 1.5px solid #3D9AE2;
-  background: #FFF;
-  margin-top: -2rem;
-  display: flex;
-  width: 44rem;
-  height: 4.2rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.8rem;
-  text-indent: 1.5rem;
-}
-
-.fb {
-  border: 1.5px solid #3D9AE2;
-  border-radius: 0.8rem;
-  background: #FFF;
-  margin-top: 2rem;
-  display: flex;
-  width: 44rem;
-  height: 4.2rem;
-  justify-content: center;
-  align-items: center;
-  text-indent: 1.5rem;
-}
-

@@ -6,6 +6,7 @@
     justify-content: center;
     gap: 15rem; 
     height: 35rem;
+    color: #4D4D4D
 }
 
 .b-tutor {
@@ -40,25 +41,22 @@
     height: 30rem;
 }
   
- 
+@media only screen and (max-width: 600px) {
+    .tutor-container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        height: auto;
+        width: 80%;
+        margin: 2rem auto;
+    }
 
- 
-   
-  
-  
-  
+    .b-tutor {
+        width: 80%;
+        text-align: center;
+    }
 
-  
-  
-
-
-
-  
-
- 
-
-  
-
-  
-
- 
+    .ts-img>img {
+        width: 35rem;
+        height: 25rem;
+    }
+}

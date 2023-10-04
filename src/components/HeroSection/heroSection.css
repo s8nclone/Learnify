@@ -4,6 +4,7 @@
     position: relative;
     background: #02243F;
     overflow: hidden;
+    /* padding: 2rem 2rem 0rem 2rem; */
     
 }
 
@@ -31,7 +32,7 @@
     background: #F2C74D;
     display: flex;
     gap: 8rem;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     align-items: center;
     color: #000;
     font-size: 2rem;
@@ -50,33 +51,37 @@
 }
 
 .hero-content {
-    width: 60rem;
-    padding: 10rem 8rem;
+    width: 50%;
+    padding: 0 5rem;
 }
 
 .popular-div {
     display: flex;
     justify-content: space-between;
-    margin: 2rem auto;
+    margin: 2rem 0;
     align-items: center;
+    width: 45rem;
 }
 
 .popular-div p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .popular-btn {
-    border: 1px solid #FFF;
-    padding: 1rem;
+    border: .1px solid #FFF;
+    padding: .5rem;
     background: transparent;
     color: #FFF;
     border-radius: .5rem;
+    width: 12rem;
 }
 
 .hero-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search-form {
@@ -87,6 +92,8 @@
     border-radius: .25rem;
     background: #FFF;
 }
+
+
 
 input.heroSearch-field {
     display: flex;
@@ -108,11 +115,14 @@ button[type="submit"] {
     border-radius: inherit;
     background: transparent;
     cursor: pointer;
+    color: #000;
 }
 
 .hero-text>h2 {
     font-size: 4rem;
-    line-height: normal;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem;
     margin: 2rem auto;
 }
 
@@ -121,8 +131,8 @@ button[type="submit"] {
 }
 
 .get-started-btn {
-    background: #3D9AE2;
-    border: none;
+    background: transparent;
+    border: 1px solid #fff;
     color: #fff;
     padding: 1.5rem;
     border-radius:  0.5rem;
@@ -132,6 +142,7 @@ button[type="submit"] {
     align-items: center;
     font-size: 1.5rem;
     cursor: pointer;
+    margin-top: 2rem;
 }
 
 .get-started-btn:hover {
@@ -143,4 +154,76 @@ button[type="submit"] {
 .bgdImage-wrapper {
     z-index: 1000;
     margin: 0 -3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-container {
+        height: 65rem;
+    }
+
+    .page-ad {
+        gap: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .bgdImage-wrapper {
+        margin-top: 6rem;
+    }
+
+    .bgdImage-wrapper>img {
+        height: 25rem;
+        width: 25rem;
+        object-fit: contain;
+        object-position: 200% 50%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 3rem 1.5rem;
+    }
+
+    .yellow-box {
+        width: 25rem;
+        height: 15rem;
+        border: 5px solid #FBBC04;
+        position: absolute;
+        top: 16%;
+        left: 20%;
+        transform: rotate(29deg);
+    }
+    
+    .white-box {
+        position: absolute;
+        width: 15rem;
+        height: 10rem;
+        border: 4px solid #FFF;
+        top: 25%;
+        left: 48%;
+        transform: rotate(29deg);
+    }
+
+    .hero-text>h2 {
+        font-size: 3rem;
+        margin: 1rem auto;
+    }
+
+    .popular-div {
+        flex-wrap: wrap;
+        width:fit-content;
+        justify-content: revert;
+        gap: 1rem;
+    }
+
+    .search-form {
+        width: 95%;
+    }
+
+    .gs-btn {
+        display: none;
+    }
 }

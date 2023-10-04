@@ -1,7 +1,7 @@
 .container {
     height: 70px;
     display: flex;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -11,17 +11,16 @@
     background: #FFF;
 }
 
-
 select {
     border: none;
     font-size: 17px;
 }
 
-
 .logo h1{
     align-items: flex-start;
     font-size: 3rem;
     text-decoration: none;
+    padding: 0 2.5rem;
 
 }
 
@@ -35,7 +34,6 @@ select {
     gap: 5rem;
     justify-content: space-between;
 }
-
 
 .pages ul {
     display: flex;
@@ -160,13 +158,53 @@ select {
     transition: .3s ease-in-out;
 }
 
+.hamburger {
+    display: none;
+}
 
+.mobile-screen {
+    visibility: hidden;
+}
 
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 2rem;
+    }
 
+    .mobile-screen {
+        visibility: inherit;
+    }
 
+    .logo {
+        margin-left: 2rem;
+    }
 
+    .pages {
+        display: none;
+    }
 
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+        background-color: #4D4D4D;
+    }
 
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
 
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
 
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
 

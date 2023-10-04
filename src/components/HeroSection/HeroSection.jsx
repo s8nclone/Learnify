@@ -29,6 +29,10 @@ function HeroSection() {
 
           <div className="hero-wrapper">
             <div className="hero-content">
+              <div className="hero-text">
+                <h2>Learning is the source <br/> of human progress.</h2>
+              </div>
+
               <div className="popular-div">
                 <p>Popular</p>
                 <button className="popular-btn">UI/UX Design</button>
@@ -37,12 +41,9 @@ function HeroSection() {
               </div>
               <form className="search-form">
                   <input className="heroSearch-field" type="search" placeholder="what do you want to learn?" />
-                  <button type="submit"><img src={searchIcon} alt="search icon" /></button>
+                  <button type="submit"><img src={searchIcon} alt="search icon" className="search-icon"/></button>
               </form>
 
-              <div className="hero-text">
-                <h2>Learning is the source of human progress.</h2>
-              </div>
 
               <div className="gs-btn">
                 <button className="get-started-btn">Get Started Now <AiOutlineArrowRight className="arrow-logo"/></button>
