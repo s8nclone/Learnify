@@ -9,10 +9,18 @@ function Navbar() {
     return (
         <div className='container'>
 
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
 
             <div className='logo'>
                 <h1><Link to={"/"}>Learnify</Link></h1>
             </div>
+            
+            <Link to={"signup"}><button className='forfree nav-btn mobile-screen'>Start for free</button></Link>
 
             <div className='pages'>
                 <ul>

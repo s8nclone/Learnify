@@ -33,7 +33,6 @@ function Login() {
             </form>
             <div className="or-container">
               <div><hr className="line-left"/></div>
-              
               <p>or</p>
               <div><hr className="line-right" /></div>
               
