@@ -9,10 +9,10 @@ function Navbar() {
     return (
         <div className='container'>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div className="hamburger">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </div>
 
 
@@ -55,7 +55,6 @@ function Navbar() {
                 </div>
             </div>
             
-
         </div>
     )
 };
