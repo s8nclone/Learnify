@@ -1,0 +1,283 @@
+.courses-nav {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0rem .01rem .8rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.courses-search-form {
+    display: flex;
+    width: 35rem;
+    padding: 2px;
+    border: 1px solid #4D4D4D;
+    border-radius: .25rem;
+    background: #FFF;
+}
+
+input.courses-search-field {
+    display: flex;
+    padding: 1rem 1.5rem;
+    flex: 1 0 0;
+    color: #4D4D4D;
+    border: none;
+}
+
+input.courses-search-field:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 4rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent;
+    cursor: pointer;
+    color: #000;
+}
+
+.courses-nav-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+.button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.profile-photo {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-photo>img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.dropdown {
+    display: none;
+}
+
+.profile-photo:hover .dropdown,
+.profile-photo:focus .dropdown {
+    display: block;
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    background: #FFF;
+    z-index: 100000;
+}
+
+.profile-photo:hover .dropdown ul,
+.profile-photo:focus .dropdown ul {
+    display: block;
+    margin: 2rem;
+}
+
+.profile-photo:hover .dropdown ul li {
+    width: 200px;
+    padding: 8px;
+    list-style: none;
+}
+
+.profile-photo:hover .dropdown a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    white-space: nowrap;
+}
+
+.profile-photo:hover .dropdown li:hover {
+    background: #4d4d4d27;
+}
+
+.profile-photo:hover .dropdown h4 {
+    max-width: 80%;
+}
+
+.all-courses {
+    display: flex;
+    background-color: #02243F;
+    padding: 1rem 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-courses-list {
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: 5rem;
+    padding: 1.5rem 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.all-courses-list::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.all-courses-list-item {
+    display: inline;
+    list-style: none;
+}
+
+.courses-list-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+.courses-list-link.active {
+    background-color: #fff;
+    color: #02243F
+}
+
+.all-courses-btn {
+    background: none;
+    border: none;
+}
+
+.courses-main-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.courses-section,
+.tutor_section {
+    color: #4D4D4D;
+    padding: 2rem 3rem;
+    text-align: left;
+}
+
+.recommend-courses {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.all_courses_list>h3,
+.tutor_section_header {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.courses_card_container {
+    width: 28rem;
+    height: 26rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.1);
+    
+}
+
+.courses_card_container:hover,
+.tutor_card_container:hover {
+    box-shadow: 0rem .3rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
+}
+
+.course_video_container {
+    height: 15rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.course_information {
+    padding: 1rem;
+    height: 10rem;
+}
+
+.courses_title,
+.tutor_name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.courses_level {
+    font-size: 1.25rem;
+}
+
+.courses_rating,
+.tutor_rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: .5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.courses_rate,
+.tutor_rate {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.courses_rating_stars,
+.tutor_rating_stars {
+    display: flex;
+    justify-content: space-around;
+}
+
+.courses_rating_no,
+.tutor_rating_no {
+    font-size: 1.125rem;
+}
+
+.courses_author,
+.tutor_roles {
+    font-size: 1.25rem;
+}
+
+.courses-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutor_card_container {
+    display: flex;
+    align-items: center;
+    height: 15rem;
+    width: 28rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.tutor_image_container {
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.tutor_section {
+    background: #F9FAFF ;
+    padding: 2rem 5rem;
+
+}
+
+.tutor_information {
+    padding: 2rem 1rem;
+}
+
+.tutor_accordion {
+    background: #fff;
+}

@@ -1,6 +1,6 @@
 import './Navbar.css'
 import Arrow from '../../assets/forwardArrow.svg'
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 
 
@@ -27,7 +27,7 @@ function Navbar() {
                     {/* <li><NavLink to={"Home"}>Home</NavLink></li> */}
 
 
-                    <li>Courses
+                    <li><NavLink to={"courses"}>Courses</NavLink>
                         <div className="dropdown">
                             <ul>
                                 <li><a href="#"><h5>Development </h5><img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>

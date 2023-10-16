@@ -8,7 +8,7 @@ import lanuageFeature from '../../assets/languageFeatureImg.svg'
 function Features() {
   return (
     <>
-        <div  className="features-container">
+        <div className="features-container">
             <div className="features-header">
                 <h2>Our Features for you</h2>
             </div>

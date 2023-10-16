@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage.jsx'
 import MainPage from './pages/MainPage.jsx'
 // import HomePage from './pages/HomePage.jsx'
-// import CoursesPage from './pages/CoursesPage.jsx'
+import CoursesPage from './pages/CoursesPage.jsx'
 // import BlogPage from './pages/BlogPage.jsx'
 // import AboutUsPage from './pages/AboutUsPage.jsx'
 import SignUpPage from './pages/SignUpPage.jsx'
@@ -26,10 +26,7 @@ const route = createBrowserRouter([
       //   path: "Home",
       //   element: <HomePage />
       // },
-      // {
-      //   path: "Courses",
-      //   element: <CoursesPage />
-      // },
+      
       // {
       //   path: "Blog",
       //   element: <BlogPage />
@@ -41,7 +38,10 @@ const route = createBrowserRouter([
       // },
     ]
   },
-
+  {
+    path: "courses",
+    element: <CoursesPage />
+  },
   {
     path: "/login",
     element: <LoginPage />

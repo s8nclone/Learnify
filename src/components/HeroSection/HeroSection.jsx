@@ -40,7 +40,7 @@ function HeroSection() {
                 <button className="popular-btn">Cloud Computing</button>
               </div>
               <form className="search-form">
-                  <input className="heroSearch-field" type="search" placeholder="what do you want to learn?" />
+                  <input className="heroSearch-field" type="search" placeholder="what do you want to learn?" name="search" />
                   <button type="submit"><img src={searchIcon} alt="search icon" className="search-icon"/></button>
               </form>
 
