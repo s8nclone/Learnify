@@ -1,6 +1,6 @@
 .courses-nav {
     display: flex;
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
     align-items: center;
     justify-content: space-between;
     position: sticky;
@@ -81,7 +81,7 @@ button[type="submit"] {
 .profile-photo:hover .dropdown ul,
 .profile-photo:focus .dropdown ul {
     display: block;
-    margin: 2rem 2rem;
+    margin: 2rem;
 }
 
 .profile-photo:hover .dropdown ul li {
@@ -111,7 +111,7 @@ button[type="submit"] {
 .all-courses {
     display: flex;
     background-color: #02243F;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -159,7 +159,8 @@ button[type="submit"] {
     text-align: center;
 }
 
-.courses-section {
+.courses-section,
+.tutor_section {
     color: #4D4D4D;
     padding: 2rem 3rem;
     text-align: left;
@@ -170,7 +171,8 @@ button[type="submit"] {
     font-weight: 700;
 }
 
-.all_courses_list>h3 {
+.all_courses_list>h3,
+.tutor_section_header {
     font-size: 1.75rem;
     font-weight: 700;
     padding: 1rem 0;
@@ -256,17 +258,26 @@ button[type="submit"] {
     background-color: #fff;
     border-radius: .5rem;
     box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
-
-.tutor_image {
+.tutor_image_container {
     border: 1px solid red;
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
 }
 
+.tutor_section {
+    background: #F9FAFF ;
+    padding: 2rem 5rem;
+
+}
+
 .tutor_information {
     padding: 2rem 1rem;
-    text-align: left;
+}
+
+.tutor_accordion {
+    background: #fff;
 }

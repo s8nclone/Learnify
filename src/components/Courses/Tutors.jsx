@@ -6,7 +6,7 @@ function Tutors({author, title, rating}) {
   return (
     <>
         <div className="tutor_card_container">
-            <div className="tutor_image">
+            <div className="tutor_image_container">
                 <img src="#" alt="play logo" className="tutor_image"/>
             </div>
             <div className="tutor_information">

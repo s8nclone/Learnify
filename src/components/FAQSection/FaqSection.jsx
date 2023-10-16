@@ -9,7 +9,7 @@ function FaqSection() {
 
   return (
     <>
-        <div className="accordion">
+        <div className="accordion tutor_accordion">
             <h1 className="faq-h1">Frequently asked questions</h1>
 
             <div>

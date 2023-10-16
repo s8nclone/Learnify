@@ -124,26 +124,33 @@ function CoursesList() {
 
         <button className="click-btn">Browse All Programs</button>
 
-        <section>
-          <h3>Popular Instructors</h3>
+        
+      </section>
+      
+      <section className="tutor_section">
+        <h3 className="tutor_section_header">Popular Instructors</h3>
 
+        <div className="all_tutor_list">
           <div className="courses-list-container">
-              {loading 
+            {loading 
+            ? (
+              <div>Loading...</div>
+            ) 
+            : courses.length > 0 
               ? (
-                <div>Loading...</div>
-              ) 
-              : courses.length > 0 
-                ? (
-                  courses.map((course) => (
-                    course.subject === "Design"
-                    ? <Tutors {...course} key={course._id} />
-                    : null
-                  ))
-                ) : (
-                  <div>No courses available.</div>
-                )}
-            </div>
-        </section>
+                courses.map((course) => (
+                  course.subject === "Design"
+                  ? <Tutors {...course} key={course._id} />
+                  : null
+                ))
+              ) : (
+                <div>No courses available.</div>
+              )}
+          </div>
+
+          <button className="click-btn">view more</button>
+        </div>
+          
       </section>
     </>
   )
