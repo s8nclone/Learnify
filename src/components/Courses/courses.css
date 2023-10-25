@@ -134,6 +134,7 @@ button[type="submit"] {
     list-style: none;
 }
 
+
 .courses-list-link {
     text-decoration: none;
     color: #fff;
@@ -142,9 +143,11 @@ button[type="submit"] {
     border: 1px solid #fff;
     border-radius: .5rem;
     padding: 1rem 2rem;
+    cursor: pointer;
 }
 
-.courses-list-link.active {
+.courses-list-link.active,
+.courses-list-link:hover {
     background-color: #fff;
     color: #02243F
 }
@@ -206,8 +209,8 @@ button[type="submit"] {
 
 .courses_title,
 .tutor_name {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 800;
 }
 
 .courses_level {
@@ -276,8 +279,5 @@ button[type="submit"] {
 
 .tutor_information {
     padding: 2rem 1rem;
-}
-
-.tutor_accordion {
-    background: #fff;
+    line-height: 2rem;
 }

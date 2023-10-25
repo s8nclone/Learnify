@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import frontArrow from '../../assets/moreFrontArrow.svg'
-// import playLogo from '../../assets/playLogo.svg'
-// import gstar from '../../assets/goldStarRatings.svg'
-// import bstar from '../../assets/blankStarRatings.svg'
 import axios from 'axios'
 import CoursesCard from './CoursesCard'
 import Tutors from './Tutors'
+import Placeholder from '../Placeholder/Placeholder'
 
 function CoursesList() {
   const [courses, setCourses] = useState([])
@@ -59,8 +57,8 @@ function CoursesList() {
             <div className="courses-list-container">
               {loading 
               ? (
-                <div>Loading...</div>
-              ) 
+                  <Placeholder />
+                )
               : courses.length > 0 
                 ? (
                   courses.map((course) => (
@@ -73,7 +71,7 @@ function CoursesList() {
                 )}
             </div>
 
-            <button className="click-btn">view more</button>
+            <button className="click-btn">View all</button>
           </div>
 
           <div className="all_courses_list">
@@ -82,8 +80,8 @@ function CoursesList() {
             <div className="courses-list-container">
               {loading 
                 ? (
-                <div>Loading...</div>
-                ) 
+                    <Placeholder />
+                  )
                 : frontendCourses.length > 0 
                   ? (
                   frontendCourses.map((course) => (
@@ -94,7 +92,7 @@ function CoursesList() {
               )}
             </div>
 
-            <button className="click-btn">view more</button>
+            <button className="click-btn">View all</button>
           </div>
 
           <div className="all_courses_list">
@@ -103,8 +101,8 @@ function CoursesList() {
             <div className="courses-list-container">
               {loading 
               ? (
-                <div>Loading...</div>
-              ) 
+                  <Placeholder />
+                ) 
               : courses.length > 0 
                 ? (
                   courses.map((course) => (
@@ -117,7 +115,7 @@ function CoursesList() {
                 )}
             </div>
 
-            <button className="click-btn">view more</button>
+            <button className="click-btn">View all</button>
           </div>
           
         </section>
@@ -134,8 +132,8 @@ function CoursesList() {
           <div className="courses-list-container">
             {loading 
             ? (
-              <div>Loading...</div>
-            ) 
+                <Placeholder />
+              ) 
             : courses.length > 0 
               ? (
                 courses.map((course) => (
@@ -148,7 +146,7 @@ function CoursesList() {
               )}
           </div>
 
-          <button className="click-btn">view more</button>
+          <button className="click-btn">View all</button>
         </div>
           
       </section>

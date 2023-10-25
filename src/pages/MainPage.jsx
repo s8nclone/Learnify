@@ -18,7 +18,7 @@ export default function MainPage() {
             <Certification />
             <CollectionVideo />
             <LearnersSection />
-            <FaqSection />
+            <FaqSection className="homepage-faq"/>
             <TutorSection />
             <LeaderSection />
         </>
