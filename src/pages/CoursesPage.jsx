@@ -10,7 +10,7 @@ function CoursesPage() {
     <>
       <CoursesHeader />
       <CoursesList />
-      <FaqSection />
+      <FaqSection className="courses-faq"/>
       <Footer />
     </>
   )
