@@ -1,0 +1,53 @@
+.profile-photo {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-photo>img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.dropdown {
+    display: none;
+}
+
+.profile-photo:hover .dropdown,
+.profile-photo:focus .dropdown {
+    display: block;
+    position: absolute;
+    right: -60%;
+    top: 100%;
+    background: #FFF;
+    z-index: 100000;
+}
+
+.profile-photo:hover .dropdown ul,
+.profile-photo:focus .dropdown ul {
+    display: block;
+    margin: 2rem;
+}
+
+.profile-photo:hover .dropdown ul li {
+    width: 200px;
+    padding: 8px;
+    list-style: none;
+}
+
+.profile-photo:hover .dropdown a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    white-space: nowrap;
+}
+
+.profile-photo:hover .dropdown li:hover {
+    background: #4d4d4d27;
+}
+
+.profile-photo:hover .dropdown h4 {
+    max-width: 80%;
+}

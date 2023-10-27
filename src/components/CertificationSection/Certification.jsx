@@ -1,15 +1,24 @@
 import React from 'react'
 import './certification.css'
-import { AiOutlineArrowRight } from 'react-icons/ai'
-import productDesignImg from '../../assets/productDesignImage.png'
-import uxWritingImg from '../../assets/uxWritingImage.png'
-import backendDevImg from '../../assets/backendDevImage.png'
-import cybersecImg from '../../assets/cyberSecurityImage.png'
-import productmgmtImg from '../../assets/productManagementImage.png'
 import ArrowBackIcon from '../../assets/keyboardArrowLeft.svg'
 import ArrowForwardIcon from '../../assets/keyboardArrowRight.svg'
+import CertificationCard from './CertificationCard'
+import { certificateData } from './cetificationData'
 
 function Certification() {
+
+   const certificationItems = [...certificateData];
+   while (certificationItems.length < 8) {
+    for (let i = 0; i < certificateData.length; i++) {
+        if (certificationItems.length < 8) {
+            certificationItems.push(certificateData[i]);
+        } else {
+            break;
+        }
+    }
+   }
+   console.log(certificationItems)
+
   return (
     <>
         <div className="certification-container">
@@ -24,77 +33,10 @@ function Certification() {
                 >
                     <img src={ArrowBackIcon} />
                 </button>
-                <div className="cert-card">
-                    <img alt="card image" src={productDesignImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>Product Design</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={uxWritingImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>UX Writing</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={backendDevImg} className='card-img' />
-                    <div className="card-text">
-                        <h3>Backend Development</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={cybersecImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>Cyber Security</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={productmgmtImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>Product Management</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={backendDevImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>FrontEnd Development</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={uxWritingImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>UX Writing</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
-
-                <div className="cert-card hide">
-                    <img alt="card image" src={backendDevImg} className='card-img'/>
-                    <div className="card-text">
-                        <h3>Backend Development</h3>
-                        <a href="#"><p className="enrol-btn">Enrol now <AiOutlineArrowRight /></p></a>
-                    </div>
-                    
-                </div>
+                
+                {certificationItems.map((item, index)=>(
+                    <CertificationCard key={index} certImage={item.certImage} certCourse={item.certCourse}/>
+                ))}
 
                 <button
                     className="cert-button"

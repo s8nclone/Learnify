@@ -11,6 +11,7 @@ import CoursesPage from './pages/CoursesPage.jsx'
 // import AboutUsPage from './pages/AboutUsPage.jsx'
 import SignUpPage from './pages/SignUpPage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
+import DashBoard from './pages/DashBoard.jsx'
 
 const route = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const route = createBrowserRouter([
       {
         path: "/",
         element: <MainPage />
+      },
+      {
+        path: "courses",
+        element: <CoursesPage />
       },
       // {
       //   path: "Home",
@@ -39,18 +44,17 @@ const route = createBrowserRouter([
     ]
   },
   {
-    path: "courses",
-    element: <CoursesPage />
-  },
-  {
     path: "/login",
     element: <LoginPage />
   },
-
   {
     path: "/signup",
     element: <SignUpPage />
-  }
+  },
+  {
+    path: "/dashboard",
+    element: <DashBoard />
+  },
 
 ])
 

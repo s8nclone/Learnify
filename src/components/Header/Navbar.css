@@ -131,6 +131,22 @@ select {
     color: inherit;
 }
 
+.courses-nav-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+.button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button>img {
+    height: 3rem;
+}
+
 .forfree {
     background: #02243F;
     color: #FFF;

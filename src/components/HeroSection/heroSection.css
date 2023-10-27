@@ -84,38 +84,8 @@
     align-items: center;
 }
 
-.search-form {
-    display: flex;
-    width: 45rem;
-    padding: 2px;
-    border: none;
-    border-radius: .25rem;
-    background: #FFF;
-}
-
-
-
-input.heroSearch-field {
-    display: flex;
-    padding: 1rem 1.5rem;
-    flex: 1 0 0;
-    color: #4D4D4D;
-    border: none;
-}
-
-input.heroSearch-field:focus {
-    outline: none;
-}
-
-button[type="submit"] {
-    width: 4rem;
-    padding: 0;
-    margin: 0;
-    border: 1px solid transparent;
-    border-radius: inherit;
-    background: transparent;
-    cursor: pointer;
-    color: #000;
+.hero-search {
+    width: 45rem !important;
 }
 
 .hero-text>h2 {

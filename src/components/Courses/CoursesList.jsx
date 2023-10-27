@@ -145,9 +145,8 @@ function CoursesList() {
                 <div>No courses available.</div>
               )}
           </div>
-
-          <button className="click-btn">View all</button>
         </div>
+        <button className="click-btn">View all</button>
           
       </section>
     </>
