@@ -1,10 +1,10 @@
 import React, { useState }from 'react'
 import './heroSection.css'
-import searchIcon from '../../assets/search-icon.svg'
 import backgroundImg from '../../assets/heroBackgroundImage.png'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import infoIcon from '../../assets/infoIcon.svg'
 import closeBtn from '../../assets/closeBtn.svg'
+import SearchBar from '../searchBar/SearchBar'
 
 function HeroSection() {
   const [visible, setVisible] = useState(true);
@@ -39,10 +39,7 @@ function HeroSection() {
                 <button className="popular-btn">Cyber Security</button>
                 <button className="popular-btn">Cloud Computing</button>
               </div>
-              <form className="search-form">
-                  <input className="heroSearch-field" type="search" placeholder="what do you want to learn?" name="search" />
-                  <button type="submit"><img src={searchIcon} alt="search icon" className="search-icon"/></button>
-              </form>
+              <SearchBar className="hero-search"/>
 
 
               <div className="gs-btn">

@@ -3,13 +3,13 @@ import './faqSection.css'
 import Accordion from './Accordion';
 import { FaqQuestions } from './faqQuestions';
 
-function FaqSection() {
+function FaqSection({className}) {
 
     const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <>
-        <div className="accordion">
+        <div className={`accordion ${className}`}>
             <h1 className="faq-h1">Frequently asked questions</h1>
 
             <div>

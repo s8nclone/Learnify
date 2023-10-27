@@ -28,6 +28,11 @@ return(
                 <h2 className="leader-position">Co-founder</h2>
             </div>
             <div className="cardd">
+                <img src={userdp1} alt="user1" className="leader-img" />
+                <p className="leader-name">Ike Chinwedu</p>
+                <h2 className="leader-position">CTO</h2>
+            </div>
+            <div className="cardd">
                 <img src={userdp4} alt="user3" className="leader-img" />
                 <p className="leader-name">Ike Chinwedu</p>
                 <h2 className="leader-position">CEO</h2>
