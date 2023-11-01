@@ -13,14 +13,14 @@ function ForgotPassword() {
   
   return (
     <>
-      <aside className="forgot-pass-page">
-        <section className="forgot-pass-container">
+      <section className="forgot-pass-page">
+        <div className="forgot-pass-container">
           <div className="forgot-pass-go-back" onClick={goBack}><AiOutlineArrowLeft /></div>
           <ForgotPasswordPath />
           <Outlet />
           <p className="footer-center">2023 Learnify. All Rights Reserved</p>
-        </section>
-      </aside>
+        </div>
+      </section>
     </>
   )
 }
