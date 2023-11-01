@@ -2,8 +2,13 @@ import React from 'react'
 import './collectionVideo.css'
 import tutorImg from '../../assets/courseTutorImg.png'
 import playLogo from '../../assets/playLogo.svg'
+import { useContext } from 'react'
+import { AuthContext } from '../../hooks/context'
 
 function CollectionVideo() {
+
+    const { isLoggedIn } = useContext(AuthContext)
+
   return (
     <>
         <div className="video-collection-flex">
@@ -13,9 +18,14 @@ function CollectionVideo() {
                 backgroundPosition: "50% 45%"}}
             >
                 <div className="video-container-content">
-                    <p className="video-content-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Non velit illum sit numquam minima nihil ipsum impedit porro."
-                    </p>
+                    {isLoggedIn 
+                        ? null
+                        : (
+                            <p className="video-content-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Non velit illum sit numquam minima nihil ipsum impedit porro."
+                            </p>
+                        )
+                    }
                     <div className="watch-video-flex">
                         <div className="play-container"><img src={playLogo} alt="play logo" className="play-logo"/></div>
                         

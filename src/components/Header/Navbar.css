@@ -134,13 +134,17 @@ select {
 .courses-nav-btn {
     display: flex;
     justify-content: space-between;
-    width: 15rem;
+    min-width: 10rem;
+}
+
+.searchBtn {
 }
 
 .button {
     border: none;
     background: transparent;
     cursor: pointer;
+    margin-right: 2rem;
 }
 
 .button>img {

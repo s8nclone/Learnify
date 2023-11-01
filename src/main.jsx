@@ -12,6 +12,9 @@ import CoursesPage from './pages/CoursesPage.jsx'
 import SignUpPage from './pages/SignUpPage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import DashBoard from './pages/DashBoard.jsx'
+import { ContextProvider } from './hooks/context.jsx'
+import Login from './components/Login/Login.jsx'
+import ForgotPassword from './components/Login/ForgotPassword/ForgotPassword.jsx'
 
 const route = createBrowserRouter([
   {
@@ -45,7 +48,17 @@ const route = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <LoginPage />
+    element: <LoginPage />,
+    children: [
+      {
+        path: "/login",
+        element: <Login />
+      },
+      {
+        path: "forgotpassword",
+        element: <ForgotPassword />
+      }
+    ]
   },
   {
     path: "/signup",
@@ -61,6 +74,8 @@ const route = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={route}/>
+    <ContextProvider >
+      <RouterProvider router={route}/>
+    </ContextProvider>
   </React.StrictMode>,
 )

@@ -1,13 +1,15 @@
-import React, { useState }from 'react'
+import React, { useContext, useState }from 'react'
 import './heroSection.css'
 import backgroundImg from '../../assets/heroBackgroundImage.png'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import infoIcon from '../../assets/infoIcon.svg'
 import closeBtn from '../../assets/closeBtn.svg'
 import SearchBar from '../searchBar/SearchBar'
+import { AuthContext } from '../../hooks/context.jsx'
 
 function HeroSection() {
   const [visible, setVisible] = useState(true);
+  const {isLoggedIn, userName} = useContext(AuthContext)
 
   const removeElement = () => {
     setVisible(!true);
@@ -29,10 +31,19 @@ function HeroSection() {
 
           <div className="hero-wrapper">
             <div className="hero-content">
-              <div className="hero-text">
-                <h2>Learning is the source <br/> of human progress.</h2>
-              </div>
-
+              {!isLoggedIn
+              ? (
+                  <div className="hero-text">
+                    <h2>Learning is the source <br/> of human progress.</h2>
+                  </div>
+                ) 
+              : (
+                  <div className="hero-text">
+                    <h2>Welcome back {userName}</h2>
+                    <h3>What are we learning today?</h3>
+                  </div>
+                )
+              }
               <div className="popular-div">
                 <p>Popular</p>
                 <button className="popular-btn">UI/UX Design</button>
@@ -40,11 +51,14 @@ function HeroSection() {
                 <button className="popular-btn">Cloud Computing</button>
               </div>
               <SearchBar className="hero-search"/>
+              {isLoggedIn && <p className="search-under-text">Search for Tutors and Mentors</p>}
 
 
-              <div className="gs-btn">
-                <button className="get-started-btn">Get Started Now <AiOutlineArrowRight className="arrow-logo"/></button>
-              </div>
+              {/* {!isLoggedIn && 
+                <div className="gs-btn">
+                  <button className="get-started-btn">Get Started Now <AiOutlineArrowRight className="arrow-logo"/></button>
+                </div>
+              } */}
             </div>
 
             <div className="bgdImage-wrapper">

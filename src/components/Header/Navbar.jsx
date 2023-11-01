@@ -1,15 +1,19 @@
 import './Navbar.css'
 import Arrow from '../../assets/forwardArrow.svg'
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import ProfileButton from '../Profile/ProfileButton';
 import searchIcon from '../../assets/search-icon.svg'
-import { useState } from 'react';
 import bell from '../../assets/notificationComponent.svg'
+import { useContext } from 'react';
+import { AuthContext } from '../../hooks/context.jsx';
 
 
 function Navbar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const {isLoggedIn} = useContext(AuthContext);
+
+    const location = useLocation();
+
+    const isCoursesOpen = location.pathname === "/courses";
 
     return (
         <div className='container'>
@@ -32,19 +36,19 @@ function Navbar() {
                     {/* <li><NavLink to={"Home"}>Home</NavLink></li> */}
 
 
-                    <li><NavLink to={"courses"}>Courses</NavLink>
+                    <li>Courses
                         <div className="dropdown">
                             <ul>
-                                <li><a href="#"><h5>Development </h5><img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>IT & Software</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Cyber Security</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Design</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Data Science</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Software Testing</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Product Management</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>No-code Dev</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Cloud Computing</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
-                                <li><a href="#"><h5>Technical writing</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></a></li>
+                                <li><NavLink to={"#"}><h5>Development </h5><img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>IT & Software</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>Cyber Security</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"/courses"}><h5>Design</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>Data Science</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>Software Testing</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>Product Management</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>No-code Dev</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>Cloud Computing</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
+                                <li><NavLink to={"#"}><h5>Technical writing</h5> <img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
                             </ul>
                         </div>
                     </li>
@@ -58,7 +62,7 @@ function Navbar() {
                 {isLoggedIn 
                 ? (
                     <div className="courses-nav-btn">
-                        <button className="searchBtn button"><img src={searchIcon} alt="daylight icon" /></button>
+                        {isCoursesOpen && <button className="searchBtn button"><img src={searchIcon} alt="search icon" /></button>}
                         <button className="notifyBtn button"><img src={bell} alt="notification icon" /></button>
                         <ProfileButton />
                     </div>

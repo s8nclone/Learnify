@@ -96,6 +96,19 @@
     margin: 2rem auto;
 }
 
+.hero-text>h3 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.search-under-text {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
 .gs-btn {
     margin: 0 auto;
 }

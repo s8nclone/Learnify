@@ -16,10 +16,10 @@ export default function MainPage() {
             <HeroSection />
             <ReviewFrame/>
             <Features />
-            <Certification />
             <CollectionVideo />
-            <AddedCourses />
+            <Certification />
             <LearnersSection />
+            <AddedCourses />
             <FaqSection className="homepage-faq"/>
             <TutorSection />
             <LeaderSection />

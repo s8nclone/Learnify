@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
 function CertificationCard({certCourse, certImage}) {
+
   return (
     <div className="cert-card">
         <img alt="card image" src={certImage} className='card-img'/>

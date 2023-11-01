@@ -3,21 +3,13 @@ import './certification.css'
 import ArrowBackIcon from '../../assets/keyboardArrowLeft.svg'
 import ArrowForwardIcon from '../../assets/keyboardArrowRight.svg'
 import CertificationCard from './CertificationCard'
-import { certificateData } from './cetificationData'
+import { useContext } from 'react'
+import { AuthContext } from '../../hooks/context'
 
 function Certification() {
 
-   const certificationItems = [...certificateData];
-   while (certificationItems.length < 8) {
-    for (let i = 0; i < certificateData.length; i++) {
-        if (certificationItems.length < 8) {
-            certificationItems.push(certificateData[i]);
-        } else {
-            break;
-        }
-    }
-   }
-   console.log(certificationItems)
+    const { moreCourseItems } = useContext(AuthContext)
+   console.log(moreCourseItems)
 
   return (
     <>
@@ -34,7 +26,7 @@ function Certification() {
                     <img src={ArrowBackIcon} />
                 </button>
                 
-                {certificationItems.map((item, index)=>(
+                {moreCourseItems.map((item, index)=>(
                     <CertificationCard key={index} certImage={item.certImage} certCourse={item.certCourse}/>
                 ))}
 
