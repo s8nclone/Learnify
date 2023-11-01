@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
 import './login.css'
 import google from '../../assets/googleLogo.svg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import { AuthContext } from '../../hooks/context.jsx'
-import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 function Login() {

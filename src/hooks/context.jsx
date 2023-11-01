@@ -5,7 +5,8 @@ const AuthContext = createContext();
 
 const ContextProvider = (props) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [userName, setUserName] = useState("Dera")
+    const [userName, setUserName] = useState("Dera");
+    const [passwordProgress, setPasswordProgress] = useState(false)
 
     const moreCourseItems = [...certificateData];
     while (moreCourseItems.length < 8) {
@@ -19,7 +20,17 @@ const ContextProvider = (props) => {
     }
 
     return (
-        <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn, userName, setUserName, moreCourseItems }}>
+        <AuthContext.Provider 
+            value={{ 
+                isLoggedIn, 
+                setIsLoggedIn, 
+                userName, 
+                setUserName, 
+                moreCourseItems,
+                passwordProgress,
+                setPasswordProgress
+            }}
+        >
             {props.children}
         </AuthContext.Provider>
     )

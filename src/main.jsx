@@ -15,6 +15,10 @@ import DashBoard from './pages/DashBoard.jsx'
 import { ContextProvider } from './hooks/context.jsx'
 import Login from './components/Login/Login.jsx'
 import ForgotPassword from './components/Login/ForgotPassword/ForgotPassword.jsx'
+import ForgotPasswordStepOne from './components/Login/ForgotPassword/ForgotPasswordStepOne.jsx'
+import ForgotPasswordStepTwo from './components/Login/ForgotPassword/ForgotPasswordStepTwo.jsx'
+import ForgotPasswordStepThree from './components/Login/ForgotPassword/ForgotPasswordStepThree.jsx'
+import ForgotPasswordStepFour from './components/Login/ForgotPassword/ForgotPasswordStepFour.jsx'
 
 const route = createBrowserRouter([
   {
@@ -56,7 +60,25 @@ const route = createBrowserRouter([
       },
       {
         path: "forgotpassword",
-        element: <ForgotPassword />
+        element: <ForgotPassword />,
+        children: [
+          {
+            path: "/login/forgotpassword",
+            element: <ForgotPasswordStepOne />
+          },
+          {
+            path: "/login/forgotpassword/2",
+            element: <ForgotPasswordStepTwo />
+          },
+          {
+            path: "/login/forgotpassword/3",
+            element: <ForgotPasswordStepThree />
+          },
+          {
+            path: "/login/forgotpassword/complete",
+            element: <ForgotPasswordStepFour />
+          }
+        ]
       }
     ]
   },
