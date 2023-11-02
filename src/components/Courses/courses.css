@@ -64,6 +64,47 @@
     text-align: center;
 }
 
+.courses-hero {
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.courses-hero-description {
+    width: 30rem;
+    text-align: left;
+    color: #ECECEC;
+}
+
+.courses-desc-header {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.courses-desc {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+
+.get-started-btn {
+    background: transparent;
+    border: 1px solid #E6F6FF;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius:  0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.get-started-btn:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+    outline: none;
+}
+
 .courses-section,
 .tutor_section {
     color: #4D4D4D;
@@ -81,6 +122,7 @@
     font-size: 1.75rem;
     font-weight: 700;
     padding: 1rem 0;
+    text-align: left;
 }
 
 .courses_card_container {
@@ -153,6 +195,7 @@
 .courses-list-container {
     display: flex;
     justify-content: space-between;
+    text-align: left;
 }
 
 .tutor_card_container {
@@ -169,17 +212,18 @@
 }
 
 .tutor_image_container {
-    border: 2px solid #fff;
-    width: 10rem;
     height: 10rem;
     margin-top: 2rem;
     border-radius: 50%;
 }
 
 .tutor_image {
-    width: auto
+    border: 2px solid #fff;
+    width: 10rem;
     height: 100%;
-    /* border-radius: 50%; */
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50%;
 }
 
 .tutor_section {
@@ -188,8 +232,20 @@
 
 }
 
+.tutor_rating_no {
+    font-size: 1.25rem;
+}
+
+.tutor_rating_no>span {
+    font-weight: 700;
+}
+
 .tutor_information {
     padding: 2rem 1rem;
     line-height: 2.5rem;
+    text-align: center;
+}
+
+.all_courses_list {
     text-align: center;
 }

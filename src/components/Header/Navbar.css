@@ -69,6 +69,7 @@ select {
 .pages ul li a.active {
     color: #3D9AE2;
     font-size: 1.7rem;
+    text-decoration: 2px underline;
 }
 
 .dropdown {
@@ -92,6 +93,7 @@ select {
 .pages ul li:hover .dropdown ul li {
     width: 200px;
     padding: 8px;
+    text-decoration: none;
 }
 
 .pages ul li:hover .dropdown a {

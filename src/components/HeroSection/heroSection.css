@@ -109,31 +109,6 @@
     margin-top: .5rem;
 }
 
-.gs-btn {
-    margin: 0 auto;
-}
-
-.get-started-btn {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 1.5rem;
-    border-radius:  0.5rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 2rem;
-}
-
-.get-started-btn:hover {
-    transform: scale(1.05);
-    transition: .2s ease-in-out;
-    outline: none;
-}
-
 .bgdImage-wrapper {
     z-index: 1000;
     margin: 0 -3rem;

@@ -36,7 +36,7 @@ function Navbar() {
                     {/* <li><NavLink to={"Home"}>Home</NavLink></li> */}
 
 
-                    <li>Courses
+                    <li><NavLink to={"/courses"}>Courses</NavLink>
                         <div className="dropdown">
                             <ul>
                                 <li><NavLink to={"#"}><h5>Development </h5><img src={Arrow} alt="front arrow" style={{maxWidth:"2.5rem"}}/></NavLink></li>
