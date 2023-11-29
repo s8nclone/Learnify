@@ -13,9 +13,9 @@ function CollectionVideo() {
     <>
         <div className="video-collection-flex">
             <div className="video-container" style={{ background: `linear-gradient(0deg, rgba(77, 77, 77, 0.44) 0%, rgba(77, 77, 77, 0.44) 100%), url(${tutorImg})`, 
-                backgroundRepeat: "no-repeat", 
-                backgroundSize: "cover",
-                backgroundPosition: "50% 45%"}}
+            backgroundRepeat: "no-repeat", 
+            backgroundSize: "cover",
+            backgroundPosition: "50% 45%"}}
             >
                 <div className="video-container-content">
                     {isLoggedIn 
