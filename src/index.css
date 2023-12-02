@@ -46,6 +46,22 @@ html {
   border: 2px solid #4D4D4D;
 }
 
+.enrol-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #3D9AE2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .3rem 0;
+  font-weight: 600;
+}
+
+
+.enrol-btn:hover {
+  text-decoration: underline;
+}
+
 .app-name {
   color: #4D4D4D;
 }

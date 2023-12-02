@@ -28,28 +28,6 @@
     transform: rotate(29deg);
 }
 
-.page-ad {
-    background: #F2C74D;
-    display: flex;
-    gap: 8rem;
-    padding: 1rem 5rem;
-    align-items: center;
-    color: #000;
-    font-size: 2rem;
-    position: absolute;
-    z-index: 10000;
-    width: 100%;
-}
-
-.page-ad img {
-    cursor: pointer;
-}
-
-.close-btn {
-    border: none;
-    background: transparent;
-}
-
 .hero-content {
     width: 50%;
     padding: 0 5rem;

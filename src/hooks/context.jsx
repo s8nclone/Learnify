@@ -7,6 +7,7 @@ const ContextProvider = (props) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userName, setUserName] = useState("Dera");
     const [passwordProgress, setPasswordProgress] = useState(false)
+    const [visible, setVisible] = useState(true)
 
     const moreCourseItems = [...certificateData];
     while (moreCourseItems.length < 8) {
@@ -28,7 +29,9 @@ const ContextProvider = (props) => {
                 setUserName, 
                 moreCourseItems,
                 passwordProgress,
-                setPasswordProgress
+                setPasswordProgress,
+                visible,
+                setVisible
             }}
         >
             {props.children}

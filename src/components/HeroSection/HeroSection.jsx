@@ -2,18 +2,13 @@ import React, { useContext, useState }from 'react'
 import './heroSection.css'
 import backgroundImg from '../../assets/heroBackgroundImage.png'
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import infoIcon from '../../assets/infoIcon.svg'
-import closeBtn from '../../assets/closeBtn.svg'
 import SearchBar from '../searchBar/SearchBar'
 import { AuthContext } from '../../hooks/context.jsx'
+import NewCareerBanner from '../Banner/NewCareerBanner.jsx'
 
 function HeroSection() {
-  const [visible, setVisible] = useState(true);
-  const {isLoggedIn, userName} = useContext(AuthContext)
-
-  const removeElement = () => {
-    setVisible(!true);
-  };
+  const {isLoggedIn, userName, visible} = useContext(AuthContext)
+  
 
   return (
     <>
@@ -21,14 +16,7 @@ function HeroSection() {
           <div className="white-box"></div>
           <div className="yellow-box"></div>
 
-          {visible && (
-            <div className="page-ad">
-              <img src={infoIcon} alt="info icon"/>
-              <p>Launch a new career in as little as 6 months</p>
-              <button onClick={removeElement} className="close-btn"><img src={closeBtn} alt="close button" /></button>
-            </div>
-          )}
-
+          {visible && <NewCareerBanner />}
           <div className="hero-wrapper">
             <div className="hero-content">
               {!isLoggedIn
