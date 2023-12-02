@@ -27,6 +27,7 @@ input.search-field {
     background: transparent;
     color: inherit;
     border: none;
+    font-size: 1.5rem;
 }
 
 input.search-field:focus {
@@ -151,4 +152,42 @@ footer li a {
     display: inline;
     padding: 0 1.5rem;
     font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-wrapper {
+        margin: 2rem auto;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 5rem;
+    }
+
+    .footer-links-wrapper {
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: revert;
+    }
+
+    .footer-links>h3 {
+        font-size: 2rem;
+    }
+
+    .footer-links li {
+        font-size: 1.2rem;
+    }
+
+    .legal {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .legal-links li {
+        font-size: 1.2rem;
+        padding: 0 .5rem;
+    }
 }

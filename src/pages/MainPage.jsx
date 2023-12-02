@@ -8,6 +8,7 @@ import LearnersSection from '../Components/LearnersSection/LearnersSection'
 import FaqSection from '../Components/FAQSection/FaqSection'
 import TutorSection from '../Components/TutorSection/TutorSection'
 import LeaderSection from '../Components/LeaderSection/LeaderSection'
+import AddedCourses from "../components/CertificationSection/AddedCourses";
 
 export default function MainPage() {
     return (
@@ -15,10 +16,11 @@ export default function MainPage() {
             <HeroSection />
             <ReviewFrame/>
             <Features />
-            <Certification />
             <CollectionVideo />
+            <Certification />
             <LearnersSection />
-            <FaqSection />
+            <AddedCourses />
+            <FaqSection className="homepage-faq"/>
             <TutorSection />
             <LeaderSection />
         </>

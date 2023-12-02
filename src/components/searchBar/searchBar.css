@@ -1,0 +1,31 @@
+.search-form {
+    display: flex;
+    width: 35rem;
+    padding: 2px;
+    border: 1px solid #4D4D4D;
+    border-radius: .25rem;
+    background: #FFF;
+}
+
+input.search-field {
+    display: flex;
+    padding: 1rem 1.5rem;
+    flex: 1 0 0;
+    color: #4D4D4D;
+    border: none;
+}
+
+input.search-field:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 4rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent;
+    cursor: pointer;
+    color: #000;
+}

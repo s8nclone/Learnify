@@ -15,9 +15,9 @@ function Footer() {
         <section className="footer-section">
             <section className="search-section">
                 <div className="search-wrapper">
-                    <p>Sorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
+                    <p>Search for your desired course or Tutor here</p>
                     <form className="search-container">
-                        <input className="search-field" type="search" placeholder="what do you want to learn?" />
+                        <input className="search-field" type="search" placeholder="what do you want to learn?" name="search" />
                         <button type="submit"><img src={searchIcon} alt="search icon" /></button>
                     </form>
                     

@@ -1,0 +1,251 @@
+.courses-nav {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0rem .01rem .8rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.all-courses {
+    display: flex;
+    background-color: #02243F;
+    padding: 1rem 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-courses-list {
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: 5rem;
+    padding: 1.5rem 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.all-courses-list::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.all-courses-list-item {
+    display: inline;
+    list-style: none;
+}
+
+
+.courses-list-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.courses-list-link.active,
+.courses-list-link:hover {
+    background-color: #fff;
+    color: #02243F
+}
+
+.all-courses-btn {
+    background: none;
+    border: none;
+}
+
+.courses-main-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.courses-hero {
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 4rem;
+}
+
+.courses-hero-description {
+    width: 30rem;
+    text-align: left;
+    color: #ECECEC;
+}
+
+.courses-desc-header {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.courses-desc {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+
+.get-started-btn {
+    background: transparent;
+    border: 1px solid #E6F6FF;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius:  0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.get-started-btn:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+    outline: none;
+}
+
+.courses-section,
+.tutor_section {
+    color: #4D4D4D;
+    padding: 2rem 3rem;
+    text-align: left;
+}
+
+.recommend-courses {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.all_courses_list>h3,
+.tutor_section_header {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.courses_card_container {
+    width: 28rem;
+    height: 26rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.1);
+    
+}
+
+.courses_card_container:hover,
+.tutor_card_container:hover {
+    box-shadow: 0rem .3rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
+}
+
+.course_video_container {
+    height: 15rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.course_information {
+    padding: 1rem;
+    height: 10rem;
+}
+
+.all_tutor_list {
+    padding-inline: 2rem;
+}
+
+.courses_title,
+.tutor_name {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.courses_level {
+    font-size: 1.25rem;
+}
+
+.courses_rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: .5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.courses_rate{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.courses_rating_stars{
+    display: flex;
+    justify-content: space-around;
+}
+
+.courses_rating_no{
+    font-size: 1.125rem;
+}
+
+.courses_author,
+.tutor_roles {
+    font-size: 1.25rem;
+}
+
+.courses-list-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.tutor_card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 25rem;
+    background: linear-gradient(to bottom, #69AAFF 40%, #FFF 0%);
+    border-radius: 1rem;
+    box-shadow: 0rem .2rem .5rem 0rem rgba(0, 0, 0, 0.1);
+    
+}
+
+.tutor_image_container {
+    height: 10rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+.tutor_image {
+    border: 2px solid #fff;
+    width: 10rem;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.tutor_section {
+    background: #F9FAFF ;
+    padding: 2rem 5rem;
+
+}
+
+.tutor_rating_no {
+    font-size: 1.25rem;
+}
+
+.tutor_rating_no>span {
+    font-weight: 700;
+}
+
+.tutor_information {
+    padding: 2rem 1rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.all_courses_list {
+    text-align: center;
+}

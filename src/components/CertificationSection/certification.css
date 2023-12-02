@@ -15,8 +15,8 @@
 
 .certification-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem 2rem;
+    grid-template-columns: repeat(4, 28rem);
+    gap: 4rem 3rem;
     margin: 2rem auto;
     
 }
@@ -27,6 +27,8 @@
     border: none;
     outline: none;
     box-shadow: 0 .1rem .5rem rgba(77, 77, 77, 0.50);
+    border-radius: 0.24rem;
+    height: 25rem;
 }
 
 .cert-card:hover {
@@ -37,15 +39,18 @@
     transition: all .3s ease-in-out;
 }
 
-.card-img>img {
-    width: inherit;
-    height: 15rem;
+.card-img {
+    width: 100%;
+    height: 17rem;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: cover;
     border: none;
     outline: none;
+    align-self: stretch;
+    border-top-right-radius: 0.24rem;
+    border-top-left-radius: 0.24rem;
 }
 
 .card-text {
@@ -65,18 +70,43 @@
     font-size: 1.5rem;
 }
 
-.enrol-btn {
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #3D9AE2;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: .3rem 0;
-    font-weight: 600;
+.cert-button {
+    display: none;
 }
 
-.enrol-btn:hover {
-    text-decoration: underline;
-}
+@media only screen and (max-width: 600px) {
+    .cert-header>h2 {
+        font-size: 2rem;
+    }
 
+    .certification-grid {
+        display: flex;
+        align-items: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .cert-button {
+        background: #F9FAFF;
+        width: 6rem;
+        height: 5rem;
+        border-radius: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .cert-button:hover {
+        transform: scale(1.1);
+    }
+    
+    .cert-button img {
+        position: absolute;
+        width: 1.5rem;
+        height: 2rem;
+    }
+}

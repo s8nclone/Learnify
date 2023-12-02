@@ -28,7 +28,6 @@
   display: flex;
   font-size: 12px;
   height: 20vh;
-  width: 70%;
   margin: 2rem auto;
 }
 
@@ -39,6 +38,39 @@
   margin: 0 auto;
   align-items: center;
   height: 15rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .leaders-container {
+    height: 65rem;
+    padding: 1rem;
+  }
+
+  .topp {
+    padding: 0;
+  }
+
+  .leaders-card {
+    flex-direction: column;
+    height: max-content;
+    gap: 3rem;
+  }
+
+  .cardd {
+    width: 15rem;
+    height: 10rem;
+  }
+
+  .leader-name {
+    font-size: 1.5rem;
+  }
+  
+  .leader-img {
+    height: 8rem;
+  }
+  .leader-position {
+    font-size: 1.2rem;
+  }
 }
 
   
