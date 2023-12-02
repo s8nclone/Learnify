@@ -54,7 +54,7 @@ function Navbar() {
                     </li>
 
                     {isLoggedIn && <li><NavLink to={"dashboard"}>Dashboard</NavLink></li>}
-                    <li>About us </li>
+                    <li><NavLink to={"/aboutus"}>About us</NavLink></li>
                     <li>Pricing</li>
 
                 </ul>

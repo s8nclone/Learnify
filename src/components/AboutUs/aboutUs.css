@@ -1,0 +1,189 @@
+.aboutUs-container {
+    position: relative;
+}
+
+.aboutUs-hero {
+    background-color: #02243F1A;
+    height: 120dvh;
+    background-image: url("../../assets/aboutLearnifyHero.png");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 4rem;
+}
+
+.aboutUs-heroText {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #002437;
+}
+
+.visionandmission-container {
+    display: flex;
+    padding: 5rem 5rem;
+    align-items: center;
+    justify-content: center;
+    color: #4D4D4D;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5rem;
+    line-height: 1.6;
+}
+
+.statementContainer {
+    width: 30rem;
+}
+
+.statement-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.statement-text {
+    font-size: 1.25rem;
+}
+
+.whoWeAre {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 4rem;
+
+}
+
+.whoWeAre-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.whoWeAre-right {
+    width: 50%;
+}
+
+
+.whoWeAre-bgd.leader {
+    background: linear-gradient(0deg, rgba(77, 77, 77, 0.40) 0%, rgba(77, 77, 77, 0.40) 100%), url("../../assets/leadershipBgdImage.jpeg") 50%/cover no-repeat;
+}
+
+.whoWeAre-bgd.partner {
+    background: linear-gradient(0deg, rgba(77, 77, 77, 0.40) 0%, rgba(77, 77, 77, 0.40) 100%), url("../../assets/ourPartnersBgdImage.jpeg") 50%/cover no-repeat;
+}
+
+.whoWeAre-bgd_right {
+    background: linear-gradient(0deg, rgba(77, 77, 77, 0.40) 0%, rgba(77, 77, 77, 0.40) 100%), url("../../assets/goalFocusBgdImage.jpeg") 50%/cover no-repeat;
+    height: 80%;
+    color: #fff;
+    padding-inline: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+/* .whoWeAre-bgd.leader:hover,
+.whoWeAre-bgd.partner:hover,
+.whoWeAre-bgd_right:hover {
+    background-size: 120%;
+}  */
+
+.whoWeAre-bgd {
+    height: 18rem;
+    padding-inline: 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.whoWeAre-bgd>p,
+.whoWeAre-bgd_right>p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.whoWeAre-text,
+.whoWeAre-text_right {
+    font-size: 1.5rem;
+    padding-inline: 2rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.whoWeAre-text {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.whoWeAre-container,
+.whoWeAre-container_right { 
+    height: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 .1rem .5rem rgba(77, 77, 77, 0.50);
+    border-radius: 0.24rem;
+    overflow: hidden;
+}
+
+.more_about {
+    text-decoration: none;
+}
+
+.history {
+    background: linear-gradient(0deg, rgba(2, 36, 63, 0.60) 0%, rgba(2, 36, 63, 0.60) 100%), url("../../assets/historyBgdImage.jpeg") 50%/cover no-repeat;
+    padding: 10rem 4rem;
+    height: 50rem;
+    color: #FFF;
+    margin-top: 4rem;
+}
+
+.history_content {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.history_content-header {
+    font-size: 2.5rem;
+}
+
+.history_content-text {
+    font-size: 1.5rem;
+}
+
+.readMoreBtn {
+    background-color: #00456B;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    color: #FFF;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+.readMoreBtn:hover {
+    transform: scale(1.05);
+}
+
+.founder_message {
+    padding: 4rem 15rem;
+    background-color:  #F9FAFF;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #4D4D4D;
+}
+
+.founder_photo {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.founder_message-text {
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

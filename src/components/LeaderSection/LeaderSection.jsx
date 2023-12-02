@@ -6,7 +6,7 @@ import userdp3 from '../../assets/userdp3.png'
 import userdp4 from '../../assets/userdp4.png'
 
 
-function LeaderSection(){
+function LeaderSection({styles}){
 
 return(
   <>

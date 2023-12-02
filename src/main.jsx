@@ -8,7 +8,7 @@ import MainPage from './pages/MainPage.jsx'
 // import HomePage from './pages/HomePage.jsx'
 import CoursesPage from './pages/CoursesPage.jsx'
 // import BlogPage from './pages/BlogPage.jsx'
-// import AboutUsPage from './pages/AboutUsPage.jsx'
+import AboutUsPage from './pages/AboutUsPage.jsx'
 import SignUpPage from './pages/SignUpPage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import DashBoard from './pages/DashBoard.jsx'
@@ -35,19 +35,19 @@ const route = createBrowserRouter([
         element: <CoursesPage />
       },
       // {
-      //   path: "Home",
+      //   path: "home",
       //   element: <HomePage />
       // },
       
       // {
-      //   path: "Blog",
+      //   path: "blog",
       //   element: <BlogPage />
       // },
-      //  {
+      {
         
-      //    path: "AboutUs",
-      //    element: <AboutUsPage />
-      // },
+        path: "aboutus",
+        element: <AboutUsPage />
+      },
     ]
   },
   {
